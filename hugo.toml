@@ -88,7 +88,7 @@ enableEmoji = true
   
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
   
-  logoBannerSubText = "Fortigate Secured vWAN"
+  logoBannerSubText = "FortiGate Secured vWAN"
   
 
   # Shows a checkmark for visited pages on the menu
