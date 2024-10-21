@@ -5,7 +5,7 @@ weight: 1
 archetype: home
 ---
 
-{{< Xperts24Banner line1="Public Cloud 202:" line2="Secured Azure Fortigate" line3="Integrated with vWAN Hub" >}}
+{{< Xperts24Banner line1="Public Cloud 202:" line2="Secured Azure FortiGate" line3="Integrated with vWAN Hub" >}}
 
 ## Welcome to Fortinet XPERTS USA Summit 2024
 
