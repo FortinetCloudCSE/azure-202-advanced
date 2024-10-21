@@ -3,21 +3,21 @@
   "author":"Srija Allam / John McDonough",
   "workshopTitle":"Azure 202 Advanced",
   "themeVariant":"Xperts2024",
-  "logoBannerText":"Sample sub-banner text",
-  "logoBannerSubText":"",
+  "logoBannerText":"Azure 202",
+  "logoBannerSubText":"Fortigate Secured vWAN",
   "errorLevel":"warning",
   "googleServicesID":"G-5RZBH288ST",
   "shortcuts": [
     {
       "text": "FortiGate in Azure VWAN Guide",
       "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview",
-      "icon": "fa-tools-cap",
+      "icon": "fa-graduation-cap",
       "weight":10
     },
     {
       "text": "Fortinet Cloud CSE GitHub Org",
       "URL": "https://github.com/FortinetCloudCSE",
-      "icon": "fa-tools-cap",
+      "icon": "fa-tools",
       "weight":20
     }
   ]

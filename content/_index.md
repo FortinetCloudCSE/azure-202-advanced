@@ -1,9 +1,13 @@
 ---
-title: "Public Cloud - 202 - Secured Azure FortiGate Integrated vWAN Hub"
-menuTitle: "TECWorkshop Template"
+title: "Fortinet XPerts 2024"
+linktitle: "TECWorkshop Template"
 weight: 1
 archetype: home
 ---
+
+{{< Xperts24Banner line1="Public Cloud 202:" line2="Secured Azure Fortigate" line3="Integrated with vWAN Hub" >}}
+
+## Welcome to Fortinet XPERTS USA Summit 2024
 
 Company ABC has decided to move to Azure Virtual WAN to do stuff
 

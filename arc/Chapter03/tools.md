@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting commands"
-menuTitle: "Tools"
+linktitle: "Tools"
 weight: 1
 ---
 

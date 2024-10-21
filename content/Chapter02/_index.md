@@ -1,6 +1,6 @@
 ---
 title: "Chapter 2: Configure & Verify"
-menuTitle: "Chapter 2: Configure & Verify"
+linktitle: "Chapter 2: Configure & Verify"
 weight: 10
 ---
 
