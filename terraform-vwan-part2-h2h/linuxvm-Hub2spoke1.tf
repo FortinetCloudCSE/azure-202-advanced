@@ -1,25 +1,25 @@
-resource "azurerm_network_interface" "linuxvm-hub2spoke1-nic1" {
+resource "azurerm_network_interface" "linuxvm-hub2spoke3-nic1" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "Linux-vHub2-Spoke1_nic1"
+  name                = "Linux-vHub2-Spoke3_nic1"
   location            = "westus"
   resource_group_name = each.value.name
 
   ip_configuration {
     name                          = "ipconfig"
-    subnet_id                     = azurerm_subnet.hub2spoke1-subnet1[each.key].id
+    subnet_id                     = azurerm_subnet.hub2spoke3-subnet1[each.key].id
     private_ip_address_allocation = "Dynamic"
   }
 }
 
 resource "azurerm_linux_virtual_machine" "linuxvm-hub2-spoke1" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "Linux-vHub2-Spoke1-VM"
+  name                = "Linux-vHub2-Spoke3-VM"
   resource_group_name = each.value.name
   location            = "westus"
   size                = "Standard_F2"
   admin_username      = var.adminusername
   network_interface_ids = [
-    azurerm_network_interface.linuxvm-hub2spoke1-nic1[each.key].id,
+    azurerm_network_interface.linuxvm-hub2spoke3-nic1[each.key].id,
   ]
 
   admin_password = var.adminpassword
