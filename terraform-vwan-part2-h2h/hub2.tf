@@ -7,7 +7,7 @@ data "azurerm_virtual_wan" "vwan_existing" {
 
 resource "azurerm_virtual_hub" "vhub2" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "vHub2_westus_VHUB"
+  name                = "${each.key}-vHub1_${each.value.location}"
   resource_group_name = each.value.name
   location            = "westus"
   virtual_wan_id      = data.azurerm_virtual_wan.vwan_existing[each.key].id

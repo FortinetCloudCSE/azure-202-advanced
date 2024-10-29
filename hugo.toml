@@ -63,8 +63,8 @@ enableEmoji = true
     # - set the following `style` to a predefined style name
     # - remove the `@import` of the self-defined chroma stylesheet from your CSS files
     #   (here eg.: theme-relearn-light.css / theme-relearn-dark.css)
-    noClasses = false
-    style = "native"
+    noClasses = true
+    style = "catppuccin-latte"
 
   [markup.goldmark.renderer]
     # activated for this showcase to use HTML and JavaScript; decide on your own needs;
@@ -81,13 +81,18 @@ enableEmoji = true
   # For added variants, please contact fortinetcloudcse@fortinet.com
   themeVariant = "Xperts2024"
 
-  #Optional, By Default, the logo banner will match the Text from themeVariant Above
+  # Optional, By Default, the logo banner will match the Text from themeVariant Above
   # If you would like to change the primary logo banner text, uncommenet logoBannerText Parameter and set to desired text.
   
   logoBannerText = "Azure 202"
   
   # Optional: If you'd like additional logo sub text/descriptions, use logoBannerSubText Parameter.  leave empty string to omit: ""
   
+  logoBannerSubText = "Advanced"
+  
+
+  # Optional parameter to set Marketing/Event code per repo from repoConfig.json
+  marketingCode = "CloudCSE-Xperts2024"
 
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = true
@@ -182,15 +187,40 @@ enableEmoji = true
 
   [params.author]
   # Author of the site, will be used in meta information
-    name = "Srija Allam / John McDonough"
+    name = "Brent Martinez / John McDonough / "
 
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> FortiGate in Azure VWAN Guide"
-url = "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview"
+name = "<i class='fas fa-lightbulb'></i> Xperts Presentation"
+url = "Xperts-2024-AZURE-202.pdf"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-tools-cap'></i> Fortinet Cloud CSE GitHub Org"
-url = "https://github.com/FortinetCloudCSE"
+name = "<i class='fas fa-lightbulb'></i> <i class='far fa-lightbulb'></i> Fortinet's Azure Microsite"
+url = "https://fortinet.com/azure"
 weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-lightbulb'></i> <i class='far fa-lightbulb'></i> Fortinet & Azure Documentation"
+url = "https://docs.fortinet.com/cloud-solutions/azure"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i> <i class='fas fa-tools'></i> AWS MP Listings for Fortinet"
+url = "https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=fortinet"
+weight = 40
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i> <i class='fas fa-tools'></i>Azure vWAN SD-WAN NGFW Deployment Guide"
+url = "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.5/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview"
+weight = 50
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tools'></i> <i class='fas fa-tools'></i>Fortinet FortiGate IPSEC Tunnels"
+url = "https://docs.fortinet.com/document/fortigate/7.4.5/administration-guide/520377/ipsec-vpns"
+weight = 60
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-graduation-cap'></i> <i class='fas fa-graduation-cap'></i> Fortinet Cloud CSE GitHub Org"
+url = "https://github.com/FortinetCloudCSE/azure-202-advanced"
+weight = 70
