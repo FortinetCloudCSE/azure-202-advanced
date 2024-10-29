@@ -1,6 +1,6 @@
 ---
 title: "Chapter 1: Deploy"
-menuTitle: "Chapter 1: Deploy"
+linktitle: "Chapter 1: Deploy"
 weight: 10
 ---
 

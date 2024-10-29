@@ -1,6 +1,6 @@
 ---
 title: "Chapter 3: Traffic Inspection"
-menuTitle: "Chapter 3: Traffic Inspection"
+linktitle: "Chapter 3: Traffic Inspection"
 weight: 10
 ---
 

@@ -65,6 +65,8 @@ enableEmoji = true
     #   (here eg.: theme-relearn-light.css / theme-relearn-dark.css)
     noClasses = true
     style = "catppuccin-latte"
+    noClasses = true
+    style = "catppuccin-latte"
 
   [markup.goldmark.renderer]
     # activated for this showcase to use HTML and JavaScript; decide on your own needs;

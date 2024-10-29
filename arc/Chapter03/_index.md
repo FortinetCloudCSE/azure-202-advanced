@@ -1,7 +1,7 @@
 ---
 title: "Chapter 3 - Branch connectivity "
 chapter: false
-menuTitle: "Chapter 3: Branch Connectivity"
+linktitle: "Chapter 3: Branch Connectivity"
 weight: 30
 ---
 
