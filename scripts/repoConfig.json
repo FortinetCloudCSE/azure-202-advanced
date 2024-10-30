@@ -3,7 +3,7 @@
   "author":"Brent Martinez / John McDonough",
   "workshopTitle":"Azure 202 Advanced",
   "themeVariant":"Xperts2024",
-  "logoBannerText":"Azure 202",
+  "logoBannerText":"FortiGate Secure Azure VWAN",
   "logoBannerSubText":"Advanced",
   "errorLevel":"warning",
   "googleServicesID":"G-5RZBH288ST",
@@ -22,31 +22,31 @@
       "weight":20
     },
     {
-      "text": "<i class='far fa-lightbulb'></i> Fortinet & Azure Documentation",
+      "text": "Fortinet & Azure Documentation",
       "URL": "https://docs.fortinet.com/cloud-solutions/azure",
       "icon": "fa-lightbulb",
       "weight":30
     },
     {
-      "text": "<i class='fas fa-tools'></i> AWS MP Listings for Fortinet",
+      "text": "Azure MarketPlace for Fortinet",
       "URL": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=fortinet",
       "icon": "fa-tools",
       "weight":40
     },
     {
-      "text": "<i class='fas fa-tools'></i>Azure vWAN SD-WAN NGFW Deployment Guide",
+      "text": "Azure VWAN SD-WAN NGFW Deployment Guide",
       "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.5/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview",
       "icon": "fa-tools",
       "weight":50
     },
     {
-      "text": "<i class='fas fa-tools'></i>Fortinet FortiGate IPSEC Tunnels",
+      "text": "Fortinet FortiGate IPSEC Tunnels",
       "URL": "https://docs.fortinet.com/document/fortigate/7.4.5/administration-guide/520377/ipsec-vpns",
       "icon": "fa-tools",
       "weight":60
     },
     {
-      "text": "<i class='fas fa-graduation-cap'></i> Fortinet Cloud CSE GitHub Org",
+      "text": "Fortinet Cloud CSE GitHub Org",
       "URL": "https://github.com/FortinetCloudCSE/azure-202-advanced",
       "icon": "fa-graduation-cap",
       "weight":70
