@@ -22,25 +22,25 @@
       "weight":20
     },
     {
-      "text": "Fortinet & Azure Documentation",
+      "text": "Fortinet & Azure Solutions",
       "URL": "https://docs.fortinet.com/cloud-solutions/azure",
       "icon": "fa-lightbulb",
       "weight":30
     },
     {
-      "text": "Azure MarketPlace for Fortinet",
+      "text": "Fortinet in Azure MarketPlace",
       "URL": "https://azuremarketplace.microsoft.com/en-us/marketplace/apps?search=fortinet",
       "icon": "fa-tools",
       "weight":40
     },
     {
-      "text": "Azure VWAN SD-WAN NGFW Deployment Guide",
+      "text": "FortiGate SD-WAN NGFW Deployment",
       "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.5/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview",
       "icon": "fa-tools",
       "weight":50
     },
     {
-      "text": "Fortinet FortiGate IPSEC Tunnels",
+      "text": "FortiGate IPSEC/VPN Tunnels",
       "URL": "https://docs.fortinet.com/document/fortigate/7.4.5/administration-guide/520377/ipsec-vpns",
       "icon": "fa-tools",
       "weight":60
