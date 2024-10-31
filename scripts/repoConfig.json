@@ -16,7 +16,7 @@
       "weight":10
     },
     {
-      "text": "<i class='far fa-lightbulb'></i> Fortinet's Azure Microsite",
+      "text": "Fortinet's Azure Microsite",
       "URL": "https://fortinet.com/azure",
       "icon": "fa-lightbulb",
       "weight":20
