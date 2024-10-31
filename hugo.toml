@@ -196,7 +196,7 @@ url = "Xperts-2024-AZURE-202.pdf"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-lightbulb'></i> <i class='far fa-lightbulb'></i> Fortinet's Azure Microsite"
+name = "<i class='fas fa-lightbulb'></i> Fortinet's Azure Microsite"
 url = "https://fortinet.com/azure"
 weight = 20
 
