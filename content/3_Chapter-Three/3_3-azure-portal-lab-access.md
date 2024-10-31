@@ -35,7 +35,7 @@ The work for this session takes place in Azure and on FortiGates deployed into t
 
 1. ***View*** the already deployed resources already deployed
 
-    {{% notice info %}}The assigned resource group has already been deployed with key resources of this session.{{% /notice %}}
+    {{% notice info %}}The assigned **Resource Group** has already been deployed along with the key resources for this session.{{% /notice %}}
 
     - **Review** and make sure all the following resources are deployed in your resource group.
       - Virtual WAN (VWAN)

@@ -12,8 +12,15 @@ In this task, the student will create FortiGate firewall policies to allow east-
 1. ***Ping*** between Linux Spoke VMs.
 
     - ***Open*** a serial console connections to each Linux Spoke VM and ping the other Spoke VM
+
         - Linux-Spoke1-VM - `ping 192.168.2.4`
         - Linux-Spoke2-VM - `ping 192.168.1.4`
+
+        Linux-Spoke1_VM | Linux-Spoke2_VM
+        :-:|:-:
+        ![eastwestping1](../images/5_1-east-west-net-traffic-1.PNG) | ![eastwestping2](../images/5_1-east-west-net-traffic-2.PNG)
+
+
 
     Neither ping will be successful because the FortiGate is not allowing traffic from port2 to port2, even though port2 would be considered *trusted* since the traffic is all internal. This is the FortiGate's ability to micro-segment the traffic.
 
@@ -27,10 +34,6 @@ In this task, the student will create FortiGate firewall policies to allow east-
       - **4** - means: print header of packets with interface name
       - **0** - means: continuous output
       - **a** - means: absolute UTC time, yyyy-mm-dd hh:mm:ss.ms
-
-        Linux-Spoke1_VM | Linux-Spoke2_VM
-        :-:|:-:
-        ![eastwestping1](../images/5_1-east-west-net-traffic-1.PNG) | ![eastwestping2](../images/5_1-east-west-net-traffic-2.PNG)
 
         FortiGate 0 | FortiGate 1
         :-:|:-:

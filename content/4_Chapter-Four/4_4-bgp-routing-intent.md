@@ -21,7 +21,7 @@ In task four, the student will configure BGP on the FortiGates and enable Routin
 
 1. ***View*** FortiGate BGP peer status
 
-    - ***Open*** each FortiGate in a browser tab/window
+    - **Open** each FortiGate in a browser tab/window
     - **Open** FortiGate CLI
     - **Run** CLI command `get router info bgp summary` to view BGP Peer status
 

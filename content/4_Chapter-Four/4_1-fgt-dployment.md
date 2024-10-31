@@ -29,7 +29,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
     ![4_1-fortigate-deployment-12](../images/4_1-fortigate-deployment-12.PNG)
 
-    {{% notice warning %}}Note: please move on to the next step **only** if Hub and Routing status have green checks.{{% /notice %}}
+    {{% notice warning %}}**Only** move on to the next step if Hub and Routing status have green checks.{{% /notice %}}
 
 1. ***Click*** on "Network Virtual Appliance in the "Third party providers" section of the left-hand navigation.
 1. ***Click*** the button "Create network virtual appliance"
@@ -94,7 +94,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
     ![4_1-fortigate-deployment-8](../images/4_1-fortigate-deployment-8.PNG)
 
-1. Click on your assigned **Resource group** to return to your RG and prepare for the next task.
+1. ***Click*** on your assigned **Resource Group** to return to your Resource Group and prepare for the next task.
 
     ![4_1-fortigate-deployment-9](../images/4_1-fortigate-deployment-9.PNG)
 

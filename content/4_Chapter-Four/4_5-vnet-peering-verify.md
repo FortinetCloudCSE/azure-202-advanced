@@ -11,7 +11,7 @@ Then second part of this task it to verify routing by viewing the routing tables
 
 ### Peer Spoke VNETS to Hub
 
-1. ***Peer*** Spoke1 VNET to hub
+1. ***Peer*** **Spoke1-vHub1_VNET** to hub
 
     - ***Navigate*** to your Virtual Wan - **vwanXX-training_VWAN**
     - ***Click*** "Virtual network connections" on the left under "Connectivity".
@@ -25,7 +25,7 @@ Then second part of this task it to verify routing by viewing the routing tables
 
     ![4_5-vnet-peering-verify-1](../images/4_5-vnet-peering-verify-1.PNG)
 
-1. ***Peer*** Spoke2 VNET to hub
+1. ***Peer*** **Spoke2-vHub1_VNET**
 
     - ***Navigate*** to your Virtual Wan - **vwanXX-training_VWAN**
     - ***Click*** "Virtual network connections" on the left under "Connectivity".
@@ -76,7 +76,7 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
 
         ![4_5-vnet-peering-verify-5](../images/4_5-vnet-peering-verify-5.PNG)
 
-1. View the effective routes on the spoke Linux VMs
+1. ***View*** the effective routes on the spoke Linux VMs
 
     - ***Navigate*** to your Linux VM **Linux-Spoke1-VM**
     - ***Click*** - "Network settings" located under "Networking" on the left side of the page

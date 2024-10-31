@@ -13,7 +13,11 @@ In this task, the student will create FortiGate firewall policies to allow North
         - Linux-Spoke1-VM - `ping 8.8.8.8`
         - Linux-Spoke2-VM - `ping 8.8.8.8`
 
-    Neither ping will be successful because the FortiGate is not allowing traffic from port2 to port1.
+        Neither ping will be successful because the FortiGate is not allowing traffic from port2 to port1.
+
+        Linux-Spoke1_VM | Linux-Spoke2_VM
+        :-:|:-:
+        ![northsouthping1](../images/northsouthping1.jpg) | ![northsouthping2](../images/northsouthping2.jpg)
 
     However, the traffic from each VM **does reach the FortiGate**, but it is dropped. Firewall Policies are required to allow traffic to pass from port2 to port1, and then return back to the VM that originated the ping.
 
@@ -25,10 +29,6 @@ In this task, the student will create FortiGate firewall policies to allow North
       - **4** - means: print header of packets with interface name
       - **0** - means: continuous output
       - **a** - means: absolute UTC time, yyyy-mm-dd hh:mm:ss.ms
-
-        Linux-Spoke1_VM | Linux-Spoke2_VM
-        :-:|:-:
-        ![northsouthping1](../images/northsouthping1.jpg) | ![northsouthping2](../images/northsouthping2.jpg)
 
         In the screenshots notice how this time the ping traffic appeared on FortiGate 1
 
