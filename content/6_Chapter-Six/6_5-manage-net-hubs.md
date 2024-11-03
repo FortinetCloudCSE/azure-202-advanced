@@ -71,4 +71,4 @@ If you did not, here are some helpful troubleshooting hints:
 
 If you checked all the above and you are still not getting the expected results, reach out to an instructor.
 
-***Thanks for attending!***
+**Thanks for attending!**

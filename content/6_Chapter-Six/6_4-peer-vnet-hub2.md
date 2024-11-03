@@ -65,7 +65,7 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
 
         ![6_4-peer-vnet-hub2-4](../images/6_4-peer-vnet-hub2-4.PNG)
 
-3. View the effective routes on the "Linux-Spoke3-VM"
+3. ***View*** the effective routes on the "Linux-Spoke3-VM"
 
     - ***Navigate*** to your Linux VM **Linux-Spoke3-VM**
     - ***Click*** - "Network settings" located under "Networking" on the left side of the page

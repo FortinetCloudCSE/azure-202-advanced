@@ -36,7 +36,7 @@ The initial vWAN hub setup was already done for you before the session. Now you 
         ![hub4](../images/hub4.jpg)
         ![hub5](../images/hub5.jpg)
         ![hub6](../images/hub6.jpg)
-        ![](../images/6_1-second-hub-3.PNG)
+        ![6_1-second-hub-3](../images/6_1-second-hub-3.PNG)
 
         {{% notice tip %}}A deployment progress screen will be shown followed by a deployment completion screen. Hub deployment can take up to 20 minutes. Leave this browser tab open until you confirm the deployment has completed.  Open the Azure portal in another browser tab and continue with the next task.{{% /notice %}}
 
