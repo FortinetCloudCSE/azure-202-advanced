@@ -17,7 +17,7 @@ The initial vWAN hub setup was already done for you before the session. Now you 
     - ***Click*** - "+ New Hub" button
 
     - ***Select*** - Region "West US"
-    - ***Enter*** - Name **vwan12-westus-vHub2_VHUB**
+    - ***Enter*** - Name **vwanXX-westus-vHub2_VHUB** <-- Where **XX** is your assigned number.
     - ***Enter*** - Hub private address space "10.2.0.0/16"
     - ***Select*** - Virtual hub capacity "2 Routing Infrastructure Units, 3 Gbps Router, Supports 2000 VMs"
     - ***Select*** - Hub routing preference "AS Path"
@@ -38,7 +38,7 @@ The initial vWAN hub setup was already done for you before the session. Now you 
         ![hub6](../images/hub6.jpg)
         ![6_1-second-hub-3](../images/6_1-second-hub-3.PNG)
 
-        {{% notice tip %}}A deployment progress screen will be shown followed by a deployment completion screen. Hub deployment can take up to 20 minutes. Leave this browser tab open until you confirm the deployment has completed.  Open the Azure portal in another browser tab and continue with the next task.{{% /notice %}}
+        {{% notice tip %}}A deployment progress screen will be shown followed by a deployment completion screen. Hub deployment can take up to 30 minutes. Leave this browser tab open until you confirm the deployment has completed.  Open the Azure portal in another browser tab and continue with the next task.{{% /notice %}}
 
         ![hub8](../images/hub8.jpg)
         ![hub9](../images/hub9.jpg)

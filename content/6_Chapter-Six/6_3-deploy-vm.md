@@ -25,7 +25,7 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 1. ***Under*** the **Basics** tab, update the following fields:
 
     (Leave the default entry for the other fields not listed here)
-    - **Resource group**:  Confirm "**vwan12-training**"
+    - **Resource group**:  Confirm "**vwanXX-training**"
     - **Virtual machine name**:  "**Linux-Spoke3-VM**"
     - **Region**: "**(US) West US**"
     - **Availability options**:  "**No infrastructure redundancy required**"
@@ -73,7 +73,7 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 
     ![6_3-deploy-vm-9](../images/6_3-deploy-vm-9.PNG)
 
-1. ***Click*** on the **vwan12-training** link to be re-directed to your resource group.
+1. ***Click*** on the **vwanXX-training** link to be re-directed to your resource group.
 
 1. ***Verify*** the new **Linux-Spoke3-VM** and the associated components are listed in your Resource Group.
 

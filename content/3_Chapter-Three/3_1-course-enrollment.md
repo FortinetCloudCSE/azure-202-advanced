@@ -19,8 +19,4 @@ weight: 1
 
 {{< launchdemoform labdefinition="azure-202-xperts" >}}
 
-{{% notice style="secondary" icon="eye" title="PLEASE DO NOT SUBMIT MULTIPLE TIMES"  %}} After submitting, this page will return with a blank email address box and no other indications.
-
-{{% /notice %}}
-
 **Continue to Chapter 3 - Task 2: User Credentials**
