@@ -9,7 +9,7 @@ These are the credentials that are used throughout the session.  It is recommend
 ## Azure Portal Login
 
 - U:  <vwanXX@fortinetcloud.onmicrosoft.com>  (User Specific)
-- P:  FortinetXperts2024!
+- P:  You will be given a unique token for login. Please use the token as password.
 
 ## Linux host username and passwords
 
