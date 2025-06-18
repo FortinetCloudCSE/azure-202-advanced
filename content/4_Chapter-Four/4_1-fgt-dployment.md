@@ -82,7 +82,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
 1. on the **Managed Application Settings** tab, click "Add"
 
-    ![4_1-fortigate-deployment-5_1](../images/4_1-fortigate-deployment-6_1.PNG)
+    ![4_1-fortigate-deployment-6_1](../images/4_1-fortigate-deployment-6_1.PNG)
 
 1. on the **add User assigned managed identity**, 
 
@@ -90,11 +90,11 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Select*** **id-us-xperts-2025-public-cloud-202**
     - ***Click*** "Add"
     
-    ![4_1-fortigate-deployment-5_1](../images/4_1-fortigate-deployment-6_2.PNG)
-    
+    ![4_1-fortigate-deployment-6_2](../images/4_1-fortigate-deployment-6_2.PNG)
+
 1. on the **Managed Application Settings** tab, make sure to verify it looks like below, click "Next"
 
-    ![4_1-fortigate-deployment-5_1](../images/4_1-fortigate-deployment-6_3.PNG)
+    ![4_1-fortigate-deployment-6_3](../images/4_1-fortigate-deployment-6_3.PNG)
 
 1. On the **Tags** tab, select "Next".
 
