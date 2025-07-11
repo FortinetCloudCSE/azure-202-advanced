@@ -41,6 +41,8 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
 
 1. ***Copy*** the below configuration to create rules on the loadbalancer. 
 
+    {{% notice warning %}}This will be configured only on **one** NVA.{{% /notice %}}
+
     {{% notice warning %}}Make sure to change the ***applies-on*** to reflect the name of your Public IP </br>
         Copy these CLI commands to notepad or similar tool to update the **vwanxx-slb-pip**, if required.{{% /notice %}}
 
@@ -62,7 +64,7 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
     {{% notice info %}}You shoould see ***Azure SLB security rules changed*** message once the above configuration is complete.{{% /notice %}}
 
     
-1. Check to see if the rules are now pushed to the Azure portal, following these steps:
+1. ***Check*** to see if the rules are now pushed to the Azure portal, following these steps:
 
     1. From your assigned Resource Group **"vwanxx-training"**, navigate to your vWAN **"vwanxx-training_VWAN"** and then your hub **"vwanXX-eastus-vHub1_VHUB"**
     1. ***Click*** Network Virtual Appliance in the left-hand navigation
@@ -73,4 +75,59 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
     ![5_3-internet-inbound-5](../images/5_3-internet-inbound-5.png)
 
     ![5_3-internet-inbound-6](../images/5_3-internet-inbound-6.png)
+
+1. ***Login*** to both the NVA FortiGate's again to create a VIP to the web Server **on both** FortiGates.
+
+    1. ***Navigate*** to Policy & objects > Virtual IP's 
+    1. ***Create*** a new VIP with the following. 
+        Attribute | Value
+        -|-
+        Name | **VIP_LinuxVM01**
+        Interface | **any**
+        External IP address/range | **Use IP address of Loadbalancer named vwanxx-slb-pip**
+        Map to IPv4 address/range | **192.168.1.4**
+        Port forwarding | **enabled**
+        Protocol | **TCP**
+        Port Mapping Type| **one to one**
+        External service port | **8080**
+        Map to IPv4 port | **80**
+    1. ***Click*** "OK"
+
+
+    ![5_3-internet-inbound-7](../images/5_3-internet-inbound-7.png)
+
+1. ***Create*** Firewall policies **on both** FortiGates to allow traffic to pass from port2 to port1 (Spoke to Internet)
+
+    The FortiGates can be setup to sync configuration information. If one of the FortiGates was designated as the primary configuration supplier and the other as a secondary, any changes made to the primary would be replicated to the secondary.
+
+    Configuration Synchronization was not enabled on the FortiGates as part of this course.
+
+    - ***Navigate*** to "Policy & Objects"
+    - ***Click*** Firewall Policy
+    - ***Click*** Create new
+
+        Attribute | Value
+        -|-
+        Name | **port1_to_port2**
+        Incoming interface | **port1**
+        Outgoing interface | **port2**
+        Source | **all**
+        Destination | **VIP_LinuxVM01**
+        Schedule | **always**
+        Service | **ALL**
+        NAT | **disabled**
+        Enable this policy | **enabled**
+
+    - ***Click*** "OK"
+
+    ![5_3-internet-inbound-8](../images/5_3-internet-inbound-8.png)
+
+1. ***Navigate*** to a web browser and check if able to reach the web server with vwanxx-slb-pip IP that was used in creating the VIP and port 8080
+
+- http://***vwanxx-slb-pip***:8080
+
+    ![5_3-internet-inbound-9](../images/5_3-internet-inbound-9.png)
+
+
+**Continue to Chapter 6 - Two vWAN Hubs**
 

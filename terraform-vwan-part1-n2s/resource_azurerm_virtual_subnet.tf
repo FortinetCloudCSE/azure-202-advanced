@@ -11,3 +11,4 @@ resource "azurerm_subnet" "subnet" {
 output "subnets" {
   value = var.enable_module_output ? azurerm_subnet.subnet : null
 }
+  
