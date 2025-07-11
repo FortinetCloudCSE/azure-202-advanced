@@ -77,4 +77,7 @@ In this task, the student will create FortiGate firewall policies to allow North
         :-:|:-:
         ![fgtpingdiag7](../images/fgtpingdiag7.jpg) | ![fgtpingdiag8](../images/5_2-north-south-net-traffic-2.PNG)
 
-**Continue to Chapter 6 - Two vWAN Hubs**
+
+**Continue to Chapter 5 - Task 3: Internet Inbound**
+
+

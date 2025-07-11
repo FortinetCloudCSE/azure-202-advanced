@@ -70,6 +70,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 1. On the **FortiGate in Virtual WAN Specific Parameters** tab, enter the following values:
 
     - ***Select*** Virtual WAN Hub - select vwanXX-eastus-vHub1_VHUB -- **Be sure to enter your assigned lab number for XX.**
+    - ***Checkbox*** **Enable Internet Edge Inbound Feature**
     - ***Leave*** all other items as is
     - ***Click*** "Next"
 
@@ -78,6 +79,22 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 1. On the **PublicIP Verification** tab, select "Next".
 
     - ***No screenshot included in the step***
+
+1. on the **Managed Application Settings** tab, click "Add"
+
+    ![4_1-fortigate-deployment-6_1](../images/4_1-fortigate-deployment-6_1.png)
+
+1. on the **add User assigned managed identity**, 
+
+    - ***Select*** Internal Training
+    - ***Select*** **id-us-xperts-2025-public-cloud-202**
+    - ***Click*** "Add"
+    
+    ![4_1-fortigate-deployment-6_2](../images/4_1-fortigate-deployment-6_2.png)
+
+1. on the **Managed Application Settings** tab, make sure to verify it looks like below, click "Next"
+
+    ![4_1-fortigate-deployment-6_3](../images/4_1-fortigate-deployment-6_3.png)
 
 1. On the **Tags** tab, select "Next".
 

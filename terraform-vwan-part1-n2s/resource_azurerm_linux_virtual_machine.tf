@@ -31,6 +31,12 @@ resource "azurerm_linux_virtual_machine" "linux_virtual_machine" {
     storage_account_uri = ""
   }
 
+  custom_data = base64encode(
+        templatefile("${path.module}/linux_virtual_machine.tpl", {
+          hostname = each.value.name
+        })
+    )
+
   disable_password_authentication = false
 }
 
