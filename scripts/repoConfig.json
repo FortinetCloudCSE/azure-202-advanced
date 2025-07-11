@@ -1,13 +1,16 @@
 {
   "repoName":"azure-202-advanced",
-  "author":"Brent Martinez / John McDonough",
+  "author":"Srija Reddy Allam, John McDonough",
   "workshopTitle":"Azure 202 Advanced",
-  "themeVariant":"Xperts2024",
+  "themeVariant":"Xperts2025",
   "logoBannerText":"Azure 202",
   "logoBannerSubText":"FortiGate Secure Azure VWAN",
   "errorLevel":"warning",
   "googleServicesID":"G-5RZBH288ST",
-  "marketingCode":"CloudCSE-Xperts2024",
+  "marketingCode":"Xperts2025",
+  "bannerLine1":"Azure 202 Advanced",
+  "bannerLine2":"FortiGate Secure Azure VWAN",
+  "bannerLine3":"",
   "shortcuts": [
     {
       "text": "Xperts Presentation",
