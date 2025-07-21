@@ -1,11 +1,11 @@
 **/.DS_Store
 public/
-docs/
 node_modules/
 docker-compose.yml
 package-lock.json
 package.json
 .terraform
 terraform.tfstate*
+terraform.tfvars
 .vscode/
 venv/

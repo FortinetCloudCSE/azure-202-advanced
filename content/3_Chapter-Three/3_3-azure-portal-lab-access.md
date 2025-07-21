@@ -1,7 +1,7 @@
 ---
-title: "Task 3: Azure Portal - Lab Access"
-linkTitle: "Task 3: Azure Portal - Lab Access"
-weight: 3
+title: "Task 2: Azure Portal - Lab Access"
+linkTitle: "Task 2: Azure Portal - Lab Access"
+weight: 2
 ---
 
 ## Azure Portal & Resources
@@ -51,4 +51,4 @@ The work for this session takes place in Azure and on FortiGates deployed into t
         - **Linux-Spoke1-VM**
         - **Linux-Spoke2-VM**
 
-**Continue to Chapter 4 - Securing the Azure vWAN**
+## Continue to Chapter 4 - Securing the Azure vWAN
