@@ -6,7 +6,7 @@ weight: 3
 
 ## Deploy a Linux VM
 
-Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linux VM in Spoke3-vHub2_VNET. This VM will be used to test hub to hub connectivity between spokes peered to different hubs.
+Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-vHub2_VNET. This VM will be used to test hub to hub connectivity between spokes peered to different hubs.
 
 ### Steps to create a Linux VM
 
@@ -16,7 +16,7 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 
     You will be redirected to the Azure Marketplace.
 
-1. ***Enter***  - **ubuntu 24.10** - in the Marketplace search bar, then press enter.  Navigate to the **Ubuntu 24.10 - all plans** offering from **Canonical** and select **Create** and **Ubuntu Server 24.10**.
+1. ***Enter***  - **ubuntu 24.10** - in the Marketplace search bar, then press enter.  Navigate to the **Ubuntu 24.10** offering from **Canonical** and select **Create** and **Ubuntu Server 24.10**.
 
     ![6_3-deploy-vm-2](../images/6_3-deploy-vm-2.PNG)
 
@@ -25,27 +25,29 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 1. ***Under*** the **Basics** tab, update the following fields:
 
     (Leave the default entry for the other fields not listed here)
-    - **Resource group**:  Confirm "**vwanXX-training**"
-    - **Virtual machine name**:  "**Linux-Spoke3-VM**"
-    - **Region**: "**(US) West US**"
-    - **Availability options**:  "**No infrastructure redundancy required**"
-    - **Security type**:  "**Standard**"
-    - **Authentication type**:  "**Password**"
-    - **Username**:  "**fortixperts**"
-    - **Password**:  "**fortiXperts!**"
-    - **Confirm password**:  "**fortiXperts!**"
+    - **Resource group**:  Confirm **vwanXX-training**
+    - **Virtual machine name**:  `Linux-Spoke3-VM`
+    - **Region**: **(US) West US**
+    - **Availability options**:  **No infrastructure redundancy required**
+    - **Security type**:  **Standard**
+    - **Size**: ***Click*** "See all sizes"
+      - ***Search*** for "F2s_v2"
+      - ***Click*** on the VM to highlight
+      - ***Click*** the "Select" button
+          ![6_3-deploy-vm-3](../images/6_3-deploy-vm-3.PNG)
+    - **Authentication type**:  **Password**
+    - **Username**:  **fortixperts**
+    - **Password**:  **fortiXperts!**
+    - **Confirm password**:  **fortiXperts!**
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram.
 
-    ![6_3-deploy-vm-3](../images/6_3-deploy-vm-3.PNG)
     ![6_3-deploy-vm-4](../images/6_3-deploy-vm-4.PNG)
-    ![6_3-deploy-vm-5](../images/6_3-deploy-vm-5.PNG)
 
-1. ***Click*** **Next: Disks >** - no changes are needed
+1. ***Click*** **Next: Disks >**
+    Feel free to read through the available disk services that can be changed/enabled.
 
 1. ***Click*** **Next: Networking >**
-
-    Feel free to read through the available disk services that can be changed/enabled.
 
 1. ***Update*** the following fields on the **Networking** tab: (Leave the default entry of the other fields not listed here)
 
@@ -56,8 +58,7 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram
 
-    ![6_3-deploy-vm-6](../images/6_3-deploy-vm-6.PNG)
-    ![6_3-deploy-vm-7](../images/6_3-deploy-vm-7.PNG)
+    ![6_3-deploy-vm-5](../images/6_3-deploy-vm-5.PNG)
 
 1. ***Click*** **Review + create >**
 
@@ -67,11 +68,11 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
 
 1. ***Click*** **Create**
 
-    ![6_3-deploy-vm-8](../images/6_3-deploy-vm-8.PNG)
+    ![6_3-deploy-vm-6](../images/6_3-deploy-vm-6.PNG)
 
     {{% notice info %}}The **Deployment is in progress** notice is displayed and then the **Your deployment is complete** notice is displayed. {{% /notice %}}
 
-    ![6_3-deploy-vm-9](../images/6_3-deploy-vm-9.PNG)
+    ![6_3-deploy-vm-7](../images/6_3-deploy-vm-7.PNG)
 
 1. ***Click*** on the **vwanXX-training** link to be re-directed to your resource group.
 

@@ -4,9 +4,9 @@ linkTitle: "Task 4: VNET Peering to the Second Hub"
 weight: 4
 ---
 
-In this task setup peering between the Spoke3-vHub2_VNET and the vwanxx-westus-vHub2_VHUB. View route tables on the FortiGate NVAs, hubs, and the Linux-Spoke3-VM.
+In this task setup peering between the Spoke3-vHub2_VNET and the vwanXX-westus-vHub2_VHUB. View route tables on the FortiGate NVAs, hubs, and the Linux-Spoke3-VM.
 
-1. Peer Spoke3-vHub2_VNET to vwan12-westus-vHub2_VHUB
+1. Peer Spoke3-vHub2_VNET to vwanXX-westus-vHub2_VHUB
 
     - ***Navigate*** to your Virtual Wan - **vwanXX-training_VWAN**
     - ***Click*** "Virtual network connections" on the left under "Connectivity".
@@ -73,7 +73,7 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
     - One the next page, navigate to ***Help*** on the bottom left and ***Click*** - "Effective Routes"
 
     Effective routes for ***Linux-Spoke3-VM***
-    ![6_4-peer-vnet-hub2-4](../images/6_4-peer-vnet-hub2-4.PNG)
+    ![6_4-peer-vnet-hub2-4](../images/6_4-peer-vnet-hub2-5.PNG)
 
     **The effective route's next hop IP is the IP address of internal load balancer that is deployed in vHub2.**
 

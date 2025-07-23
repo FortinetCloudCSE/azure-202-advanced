@@ -20,30 +20,30 @@ Azure Virtual Networks (VNET) can be peered to a vWAN hub. Once a VNET is peered
         ![vnet3](../images/vnet3.jpg)
 
     - ***Select*** - your Resource Group **vwanXX-training**
-    - ***Enter*** - Virtual network name **Spoke3-vHub2_VNET**
+    - ***Enter*** - Virtual network name `Spoke3-vHub2_VNET`
     - ***Select*** - Region "(US) West US"
     - ***Click*** - "Next" button
 
         ![vnet4](../images/vnet4.jpg)
 
-    - ***Click*** - "Next" button on "Security" tab
+    - ***Click*** - "Next : IP addresses" button on "Security" tab
 
        ![vnet5](../images/vnet5.jpg)
 
-    - ***Enter*** - Address Space **192.168.3.0**
+    - ***Enter*** - Address Space `192.168.3.0`
     - ***Select*** - Netmask **/24**
     - ***Click*** - "Pencil" button to edit subnet configuration
-    - ***Enter*** - Name **Subnet1-Spoke3_SUBNET**
-    - ***Enter*** - Starting address **192.168.3.0**
+    - ***Enter*** - Name `Subnet1-Spoke3_SUBNET`
+    - ***Enter*** - Starting address `192.168.3.0`
     - ***Click*** - "Save" button
 
        ![vnet6](../images/vnet6.jpg)
 
-        - ***Click*** - "Next" button
+        - ***Click*** - "Next : Tags" button
 
        ![vnet7](../images/vnet7.jpg)
 
-        - ***Click*** - "Next" button
+        - ***Click*** - "Next : Review + create" button
 
        ![vnet8](../images/vnet8.jpg)
 
