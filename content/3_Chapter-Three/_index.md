@@ -10,4 +10,4 @@ In this chapter, review the lab credentials, and login to the Azure portal with 
 - Lab Credentials
 - Azure Portal - Lab Access
 
-## Continue to Chapter 3 - Task 1: User Credentials
+**Continue to Chapter 3 - Task 1: User Credentials**

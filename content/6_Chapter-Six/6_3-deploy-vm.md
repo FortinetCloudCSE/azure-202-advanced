@@ -32,8 +32,8 @@ Now that you have the Spoke3-vHub2_VNET deployed, you are going to deploy a Linu
     - **Security type**:  "**Standard**"
     - **Authentication type**:  "**Password**"
     - **Username**:  "**fortixperts**"
-    - **Password**:  "**Fortixperts2024!**"
-    - **Confirm password**:  "**Fortixperts2024!**"
+    - **Password**:  "**fortiXperts!**"
+    - **Confirm password**:  "**fortiXperts!**"
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram.
 

@@ -5,7 +5,7 @@ weight: 1
 ---
 
 
-In this task, the student will create FortiGate firewall policies to allow east-west network traffic.
+In this task create FortiGate firewall policies to allow east-west network traffic.
 
 ### Spoke to Spoke traffic (East-West)
 
@@ -16,13 +16,11 @@ In this task, the student will create FortiGate firewall policies to allow east-
         - Linux-Spoke1-VM - `ping 192.168.2.4`
         - Linux-Spoke2-VM - `ping 192.168.1.4`
 
-        Linux-Spoke1_VM | Linux-Spoke2_VM
+        Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
         ![eastwestping1](../images/5_1-east-west-net-traffic-1.PNG) | ![eastwestping2](../images/5_1-east-west-net-traffic-2.PNG)
 
-
-
-    Neither ping will be successful because the FortiGate is not allowing traffic from port2 to port2, even though port2 would be considered *trusted* since the traffic is all internal. This is the FortiGate's ability to micro-segment the traffic.
+    Neither ping will be successful because the FortiGates are not allowing traffic from port2 to port2, even though port2 would be considered *trusted* since the traffic is all internal. This is the FortiGate's ability to micro-segment the traffic.
 
     However, the traffic from each VM **does reach the FortiGate**, but it is dropped. Firewall Policies are required to allow traffic to pass from port2 to port2.
 
@@ -53,15 +51,14 @@ In this task, the student will create FortiGate firewall policies to allow east-
 
         Attribute | Value
         -|-
-        Name | **port2_to_port2**
+        Name | `port2_to_port2`
         Incoming interface | **port2**
         Outgoing interface | **port2**
         Source | **all**
         Destination | **all**
         Schedule | **always**
         Service | **ALL**
-        NAT | **enabled**
-        IP pool configuration | **Use Outgoing Interface Address**
+        NAT | **disabled**
         Enable this policy | **enabled**
 
     - ***Click*** "OK"
@@ -73,7 +70,7 @@ In this task, the student will create FortiGate firewall policies to allow east-
     - Linux-Spoke2-VM - `ping 192.168.1.4`
 
 
-        Linux-Spoke1_VM | Linux-Spoke2_VM
+        Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
         ![eastwestping3](../images/5_1-east-west-net-traffic-4.PNG) | ![eastwestping4](../images/5_1-east-west-net-traffic-5.PNG)
 

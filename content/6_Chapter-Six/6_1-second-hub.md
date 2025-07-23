@@ -4,7 +4,7 @@ linkTitle: "Task 1: Deploy a second VWAN Hub"
 weight: 1
 ---
 
-In this task, the student will deploy a second vWAN hub.
+In this task deploy a second vWAN hub.
 
 ## Deploy a VWAN Hub
 

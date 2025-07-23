@@ -5,7 +5,7 @@ weight: 5
 ---
 
 
-In this task, the student will create FortiGate firewall policies to allow or deny selective east-west network traffic between spokes in different vWAN hubs.
+In this task create FortiGate firewall policies to allow or deny selective east-west network traffic between spokes in different vWAN hubs.
 
 Create the following addresses and firewall policies **on both** FortiGates.
 

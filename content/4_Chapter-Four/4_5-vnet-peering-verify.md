@@ -5,9 +5,8 @@ weight: 5
 ---
 
 
-In this task, the student will setup peering between the spokes/VNETs and the vWAN hub.
+In this task setup peering between the spokes/VNETs and the vWAN hub.
 Then second part of this task it to verify routing by viewing the routing tables on the FortiGate NVAs, the hub, and effective routes on the Linux hosts.
-
 
 ### Peer Spoke VNETS to Hub
 

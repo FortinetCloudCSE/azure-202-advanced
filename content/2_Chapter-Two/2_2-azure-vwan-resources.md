@@ -21,6 +21,6 @@ A hub gateway isn't the same as a virtual network gateway that you use for Expre
 
 - **Hub route table:** You can create a virtual hub route and apply the route to the virtual hub route table. You can apply multiple routes to the virtual hub route table.
 
-In this workshop the student will use these resources to help create network traffic and route to the FortiGate NVAs. 
+These resources are used to manage network traffic and route to the FortiGate NVAs.
 
 **Continue to Chapter 2 - Task 3: FortiGate NVA Support for vWAN**

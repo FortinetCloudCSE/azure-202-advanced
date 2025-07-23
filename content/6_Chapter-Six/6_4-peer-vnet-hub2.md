@@ -4,7 +4,7 @@ linkTitle: "Task 4: VNET Peering to the Second Hub"
 weight: 4
 ---
 
-In this task, the student will setup peering between the Spoke3-vHub2_VNET and the  vwanxx-westus-vHub2_VHUB.  Then you will view route tables on the FortiGate NVAs, hubs, and the Linux-Spoke3-VM.
+In this task setup peering between the Spoke3-vHub2_VNET and the vwanxx-westus-vHub2_VHUB. View route tables on the FortiGate NVAs, hubs, and the Linux-Spoke3-VM.
 
 1. Peer Spoke3-vHub2_VNET to vwan12-westus-vHub2_VHUB
 

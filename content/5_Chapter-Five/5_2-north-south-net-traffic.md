@@ -5,17 +5,19 @@ weight: 2
 ---
 
 
-In this task, the student will create FortiGate firewall policies to allow North-South (Spoke to Internet) network traffic.
+In this task create FortiGate firewall policies to allow North-South (Spoke to Internet) network traffic.
 
 1. ***Ping*** from the Linux Spoke VMs to the Internet
 
-    - ***Open*** a serial console connections to each Linux Spoke VM and ping the other Spoke VM
+    - ***Open*** a serial console connections to each Linux Spoke VM and ping 8.8.8.8
         - Linux-Spoke1-VM - `ping 8.8.8.8`
         - Linux-Spoke2-VM - `ping 8.8.8.8`
 
-        Neither ping will be successful because the FortiGate is not allowing traffic from port2 to port1.
+    - Also try `wget https://www.fortinet.com`
 
-        Linux-Spoke1_VM | Linux-Spoke2_VM
+        Neither ping nor wget will be successful because the FortiGate is not allowing traffic from port2 to port1.
+
+        Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
         ![northsouthping1](../images/northsouthping1.jpg) | ![northsouthping2](../images/northsouthping2.jpg)
 
@@ -38,6 +40,10 @@ In this task, the student will create FortiGate firewall policies to allow North
 
     The ping traffic is only on one FortiGate, this is because the internal load balancer sends traffic from the Spokes to one of the FortiGates for inspection.
 
+1. ***View*** wget traffic with this FortiGate CLI
+
+    - `diagnose sniffer packet port2 'host www.fortinet.com' 4 0 a`
+
 1. ***Create*** Firewall policies **on both** FortiGates to allow traffic to pass from port2 to port1 (Spoke to Internet)
 
     The FortiGates can be setup to sync configuration information. If one of the FortiGates was designated as the primary configuration supplier and the other as a secondary, any changes made to the primary would be replicated to the secondary.
@@ -50,7 +56,7 @@ In this task, the student will create FortiGate firewall policies to allow North
 
         Attribute | Value
         -|-
-        Name | **port2_to_port1**
+        Name | `port2_to_port1`
         Incoming interface | **port2**
         Outgoing interface | **port1**
         Source | **all**
@@ -69,15 +75,12 @@ In this task, the student will create FortiGate firewall policies to allow North
     - Linux-Spoke1-VM - `ping 8.8.8.8`
     - Linux-Spoke2-VM - `ping 8.8.8.8`
 
-        Linux-Spoke1_VM | Linux-Spoke2_VM
-        :-:|:-:
-        ![northsouthping3](../images/northsouthping3.jpg) | ![northsouthping4](../images/northsouthping4.jpg)
+    Linux-Spoke1-VM | Linux-Spoke2-VM
+    :-:|:-:
+    ![northsouthping3](../images/northsouthping3.jpg) | ![northsouthping4](../images/northsouthping4.jpg)
 
-        FortiGate 0 | FortiGate 1
-        :-:|:-:
-        ![fgtpingdiag7](../images/fgtpingdiag7.jpg) | ![fgtpingdiag8](../images/5_2-north-south-net-traffic-2.PNG)
-
+    FortiGate 0 | FortiGate 1
+    :-:|:-:
+    ![fgtpingdiag7](../images/fgtpingdiag7.jpg) | ![fgtpingdiag8](../images/5_2-north-south-net-traffic-2.PNG)
 
 **Continue to Chapter 5 - Task 3: Internet Inbound**
-
-

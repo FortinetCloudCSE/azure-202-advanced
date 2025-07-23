@@ -4,7 +4,7 @@ linkTitle: "Task 4: BGP & Routing Intent"
 weight: 4
 ---
 
-In task four, the student will configure BGP on the FortiGates and enable Routing Intent from the Azure hub portal.
+In this task configure BGP on the FortiGates and enable Routing Intent from the Azure portal.
 
 ### Configure BGP
 
@@ -67,7 +67,7 @@ In task four, the student will configure BGP on the FortiGates and enable Routin
 
 1. ***Repeat*** the process to add a static route for the Azure internal load balancer health probe
 
-    Refer to the overall [](../images/1_1-az-vwan-single-hub-ra.PNG) for the internal load balancer placement. Health probes enable the Azure load balancer to know if a FortiGate is in a state to forward traffic.
+    Refer to the overall [architecture](../images/1_1-az-vwan-single-hub-ra.PNG) for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
 
     The static route destination below is the default Azure load balancer health probe destination.
 

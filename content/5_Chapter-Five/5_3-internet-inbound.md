@@ -4,15 +4,19 @@ linkTitle: "Task 3: Internet inbound Traffic"
 weight: 3
 ---
 
-In this task, the student will create FortiGate firewall policies and DNAT policies on Load balancer to allow North-South (Internet inbound) network traffic.
+In this task create FortiGate firewall policies and DNAT (Destination Network Address Translation) policies on the Load balancer to allow Internet inbound network traffic.
 
-1. From your assigned Resource Group **"vwanxx-training"**, navigate to your vWAN **"vwanxx-training_VWAN"** and then your hub **"vwanXX-eastus-vHub1_VHUB"**
+1. ***Find*** Internet Inbound IP Address
+
+    1. From your assigned Resource Group **"vwanxx-training"**, navigate to your vWAN **"vwanxx-training_VWAN"** and then your hub **"vwanXX-eastus-vHub1_VHUB"**
+
     1. ***Click*** Network Virtual Appliance in the left-hand navigation
     1. ***Click*** on "Manage Configurations" in the right-hand "Network Virtual Appliances" pane
     1. ***Click*** on Internet Inbound in the left-hand navigation
-    1. ***Note*** You should see a Public IP with "vwanxx-slb-pip" assigned to the load balancer already. Also there are 0 rules at this time that are assigned to the Loadbalancer. 
-    1. ***Copy*** the Name (vwanxx-slb-pip) and IP address to a notepad. 
-    
+    1. ***Note*** You should see a Public IP with "vwanxx-slb-pip" assigned to the load balancer. Notice there are 0 rules assigned to the Loadbalancer
+        Load Balancer Rules are required to allow traffic inbound. Each rule specifies IP, Port, and Protocol
+    1. ***Copy*** the Name (vwanxx-slb-pip) and IP address to a notepad
+
     ![5_3-internet-inbound-1](../images/5_3-internet-inbound-1.png)
 
     ![5_3-internet-inbound-2](../images/5_3-internet-inbound-2.png)
@@ -32,8 +36,8 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
 
     ![5_3-internet-inbound-3](../images/5_3-internet-inbound-3.png)
 
-1. ***Click*** on the ***>_*** at the top right corner. 
-    
+1. ***Click*** on the ***>_*** at the top right corner.
+
     - ***Copy*** this command `exec azure vwan-slb show`
     - ***Note*** Should see output like below
 
@@ -41,7 +45,7 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
 
 1. ***Copy*** the below configuration to create rules on the loadbalancer. 
 
-    {{% notice warning %}}This will be configured only on **one** NVA.{{% /notice %}}
+    {{% notice warning %}}Load Balancer rules only need to be configured on **one** FortiGate NVA.{{% /notice %}}
 
     {{% notice warning %}}Make sure to change the ***applies-on*** to reflect the name of your Public IP </br>
         Copy these CLI commands to notepad or similar tool to update the **vwanxx-slb-pip**, if required.{{% /notice %}}
@@ -61,9 +65,8 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
     end
     ```
 
-    {{% notice info %}}You shoould see ***Azure SLB security rules changed*** message once the above configuration is complete.{{% /notice %}}
+    {{% notice info %}}You should see ***Azure SLB security rules changed*** message once the above configuration is complete.{{% /notice %}}
 
-    
 1. ***Check*** to see if the rules are now pushed to the Azure portal, following these steps:
 
     1. From your assigned Resource Group **"vwanxx-training"**, navigate to your vWAN **"vwanxx-training_VWAN"** and then your hub **"vwanXX-eastus-vHub1_VHUB"**
@@ -78,11 +81,12 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
 
 1. ***Login*** to both the NVA FortiGate's again to create a VIP to the web Server **on both** FortiGates.
 
-    1. ***Navigate*** to Policy & objects > Virtual IP's 
-    1. ***Create*** a new VIP with the following. 
+    1. ***Navigate*** to Policy & objects > Virtual IP's
+    1. ***Create*** a new VIP with the following.
+
         Attribute | Value
         -|-
-        Name | **VIP_LinuxVM01**
+        Name | `VIP_LinuxVM01`
         Interface | **any**
         External IP address/range | **Use IP address of Loadbalancer named vwanxx-slb-pip**
         Map to IPv4 address/range | **192.168.1.4**
@@ -91,8 +95,8 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
         Port Mapping Type| **one to one**
         External service port | **8080**
         Map to IPv4 port | **80**
-    1. ***Click*** "OK"
 
+    1. ***Click*** "OK"
 
     ![5_3-internet-inbound-7](../images/5_3-internet-inbound-7.png)
 
@@ -108,7 +112,7 @@ In this task, the student will create FortiGate firewall policies and DNAT polic
 
         Attribute | Value
         -|-
-        Name | **port1_to_port2**
+        Name | `port1_to_port2`
         Incoming interface | **port1**
         Outgoing interface | **port2**
         Source | **all**

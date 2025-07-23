@@ -44,10 +44,6 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
 1. ***Click*** "Create" on the Marketplace listing for "**Azure Virtual WAN Secured by FortiGate**"
 
-    ![vwan5](../images/vwan5.jpg)
-
-1. ***Click*** on "Yes, continue" on the Continue creating this plan? screen.
-
     ![4_1-fortigate-deployment-4](../images/4_1-fortigate-deployment-4.PNG)
 
 1. On the "Create Azure Virtual WAN Secured by FortiGate" window, enter the following values in the **Basics** tab:
@@ -55,8 +51,8 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Select*** - Resource Group - **vwanXX-training** -- *Be sure to select your assigned Resource Group*
     - ***Select*** - Region - **East US** -- *May already be defaulted to the correct region*
     - ***Enter*** - FortiGate administrative username - ```fortixperts```
-    - ***Enter*** - password - ```Fortixperts2024!```
-    - ***Confirm*** - password - ```Fortixperts2024!```
+    - ***Enter*** - password - ```fortiXperts!```
+    - ***Confirm*** - password - ```fortiXperts!```
     - ***Enter*** - FortiGate Name Prefix - **vwanXX** -- *Enter your assigned lab number for XX.*
     - ***Select*** - FortiGate License Type - "**Pay As you Go (PAYG)**"
     - ***Select*** - FortiGate Image Version - "**7.4.X**" -- *Be sure to select the highest 7.4 version.*
@@ -89,7 +85,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Select*** Internal Training
     - ***Select*** **id-us-xperts-2025-public-cloud-202**
     - ***Click*** "Add"
-    
+
     ![4_1-fortigate-deployment-6_2](../images/4_1-fortigate-deployment-6_2.png)
 
 1. on the **Managed Application Settings** tab, make sure to verify it looks like below, click "Next"

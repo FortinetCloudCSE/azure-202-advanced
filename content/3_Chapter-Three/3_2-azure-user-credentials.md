@@ -21,4 +21,4 @@ These are the credentials that are used throughout the session.  It is recommend
 - U:  fortixperts
 - P:  fortiXperts!
 
-## Continue to Chapter 3 - Task 2: Azure Portal - Lab Access
+**Continue to Chapter 3 - Task 2: Azure Portal - Lab Access**

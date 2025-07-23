@@ -27,6 +27,6 @@ The Virtual WAN architecture is a hub and spoke architecture with scale and perf
 - Automated spoke setup and configuration: Connect your virtual networks and workloads to the Azure hub seamlessly.
 - Intuitive troubleshooting: You can see the end-to-end flow within Azure, and then use this information to take required actions.
 
-In this course, the vWAN has already been deployed for the student.
+In this course, the vWAN has already been deployed.
 
 **Continue to Chapter 2 - Task 2: Azure vWAN resources**

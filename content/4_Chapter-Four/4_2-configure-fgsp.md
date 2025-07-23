@@ -26,14 +26,14 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
 
     1. On FortiGate ending with **_0** configure the peerip address with the port2 private IP address of the FortiGate ending with **_1**.
 
-        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_1** is not **10.1.112.6** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_1**</br>
+        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_1** is not **10.1.112.7** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_1**</br>
         Copy these CLI commands to notepad or similar tool to update the *peerip* address, if required.{{% /notice %}}
 
         ```basic
         config system standalone-cluster
             config cluster-peer
                 edit 1
-                    set peerip 10.1.112.6
+                    set peerip 10.1.112.7
                 next
             end
             set standalone-group-id 1
@@ -58,7 +58,7 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
 
     1. On FortiGate ending with **_1** configure the peerip address with the port2 private IP address of the FortiGate ending with **_1**.
 
-        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_0** is not **10.1.112.5** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_0**</br>
+        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_0** is not **10.1.112.6** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_0**</br>
         Copy these CLI commands to notepad or similar tool to update the *peerip* address, if required.{{% /notice %}}
 
         {{% notice warning %}}Notice that the **group-member-id** is **2** in the CLI commands below{{% /notice %}}
@@ -67,7 +67,7 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
         config system standalone-cluster
             config cluster-peer
                 edit 1
-                    set peerip 10.1.112.5
+                    set peerip 10.1.112.6
                 next
             end
             set standalone-group-id 1

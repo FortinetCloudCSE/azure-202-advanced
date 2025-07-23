@@ -4,7 +4,7 @@ menuTitle: "Chapter 5: Network Traffic Management"
 weight: 50
 ---
 
-In chapter five, the student will start managing network traffic from spoke to spoke (East-West) and from the spoke to the Internet (North/South).  This will be accomplished by creating firewall policies on the FortiGate NVAs.
+In this chapter manage network traffic from spoke to spoke (East-West) and from spoke to the Internet (North/South).  This will be accomplished by creating firewall policies on the FortiGate NVAs.
 
 Progress Summary:
 
@@ -13,9 +13,9 @@ Progress Summary:
 - BGP and Routing Intent have been configured and enabled
 
 {{% notice info %}}
-Commonly used tools **ping** and **curl** will help determine availability and reachability of devices and services.
+Commonly used tools **curl**, **ping** and **wget** can help determine availability and reachability of devices and services.
 
-Additionally packet sniffing in the FortGate CLI will help determine if traffic is reaching the FortiGates for inspections and forwarding to the appropriate destination.
+Additionally packet sniffing in the FortGate CLI can help determine if traffic is reaching the FortiGates for inspections and forwarding to the appropriate destination.
 {{% /notice %}}
 
 **Continue to Chapter 5 - Task 1: East-West Network Traffic**

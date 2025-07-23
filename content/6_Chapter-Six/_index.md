@@ -5,7 +5,7 @@ weight: 60
 ---
 
 
-In chapter six, the student will deploy a second vWAN hub and create a VNET. Next the student will peer the VNET to the new hub, deploy a Linux VM, and managed network connectivity between the two hubs.
+In chapter six deploy a second vWAN hub and create a VNET, peer the VNET to the new hub, deploy a Linux VM, and managed network connectivity between the two hubs.
 
 ## Overview
 
@@ -17,6 +17,6 @@ In chapter six, the student will deploy a second vWAN hub and create a VNET. Nex
 
 After you have completed the above tasks, the diagram below is a visual representation of what you will have deployed and configured.
 
-![1_1-az-vwan-second-hub-ra](./images/1_1-az-vwan-second-hub-ra.PNG)
+![1_1-az-vwan-second-hub-ra](../images/1_1-az-vwan-second-hub-ra.PNG)
 
 **Continue to Chapter 6 - Task 1: Deploy a second VWAN Hub**
