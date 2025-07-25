@@ -1,11 +1,12 @@
 locals {
   # Resource Groups must already exist
-  resource_group_names  = toset(["vwan12", "vwan13"])
+  resource_group_names = toset(var.resource_group_names)
+
   resource_group_suffix = "-training"
   location              = "eastus"
 
-  admin_username = "fortixperts"
-  admin_password = "Fortixperts2024!"
+  admin_username = var.admin_username
+  admin_password = var.admin_password
 
   # Create a map of virtual WANs from Resource Groups
   virtual_wan_maps = {

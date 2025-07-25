@@ -32,10 +32,10 @@ resource "azurerm_linux_virtual_machine" "linux_virtual_machine" {
   }
 
   custom_data = base64encode(
-        templatefile("${path.module}/linux_virtual_machine.tpl", {
-          hostname = each.value.name
-        })
-    )
+    templatefile("${path.module}/linux_virtual_machine.tpl", {
+      hostname = each.value.name
+    })
+  )
 
   disable_password_authentication = false
 }
