@@ -15,9 +15,11 @@ The work for this session takes place in Azure and on FortiGates deployed into t
 
     ![portallogin1](../images/portallogin1.png)
 
+    ![portallogin2](../images/portallogin2.png)
+
 1. ***Click*** "Yes" to "Stay singed in?"
 
-    ![portallogin2](../images/portallogin2.png)
+    ![portallogin2-5](../images/portallogin2-5.png)
 
 1. ***Click*** "Cancel" on the "Welcome to Microsoft Azure" page (if displayed)
 
@@ -50,5 +52,7 @@ The work for this session takes place in Azure and on FortiGates deployed into t
       - Virtual Machines (VMs) with disk and network interface
         - **Linux-Spoke1-VM**
         - **Linux-Spoke2-VM**
+
+    ![portallogin5](../images/portallogin5.png)
 
 **Continue to Chapter 4 - Securing the Azure vWAN**

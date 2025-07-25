@@ -3,7 +3,7 @@ title: "Task 3: FortiGate NVA Support for vWAN"
 weight: 3
 ---
 
-Microsoft Azure supports virtual WAN (vWAN), and partners with third-party solution providers, such as Fortinet, to deploy network virtual appliances (NVAs) to a vWAN hub.
+Microsoft Azure supports virtual WAN (vWAN) and partners with third-party solution providers, such as Fortinet, to deploy network virtual appliances (NVAs) to a vWAN hub.
 
 ### FortiGate NVA
 
@@ -15,7 +15,7 @@ FortiGate NVAs are deployed in an active/active high availability (HA) configura
 
 ### Order Types
 
-You can choose one of the following scale unit values when deploying FortiGate NVAs.  Higher scale units are available for increased bandwidth requirements. A specific FortiGate virtual machine license is recommended for each scale unit value.
+Choose one of the following scale unit values when deploying FortiGate NVAs.  Higher scale units are available for increased bandwidth requirements. A specific FortiGate virtual machine license is recommended for each scale unit value.
 
 #### NGFW Deployment
 
@@ -25,11 +25,13 @@ You can choose one of the following scale unit values when deploying FortiGate N
 
 ![2_3-fortigate-support-vwan-sdwan-ngfw](../images/2_3-fortigate-support-vwan-sdwan-ngfw.PNG)
 
+{{% notice tip %}}Azure has release new az cli commands that support changing the scale unit of a NVA with out the need to redeploy the environment. See [NVA Management](https://learn.microsoft.com/en-us/cli/azure/network/virtual-appliance?view=azure-cli-latest){{% /notice %}}
+
 ### Deployment Requirements
 
 Deployment requires the following:
 
-- Two full FortiGate licenses if using bring your own license (BYOL) or FortiFlex. Alternatively, you can select pay as you go (PAYG) during deployment.
-- One fully licensed FortiManager instance (PAYG or BYOL)
+- The number of required FortiGate licenses depends on the selected scale unit. Bring-Your-Own-License (BYOL), FortiFlex, and Pay-As-You-Go (PAYG) are all supported. the desired licensing method can be chosen during deployment.
+- One fully licensed FortiManager instance (BYOL or Flex) is recommended, but not required.
 
 **Continue to Chapter 3 - Getting Started**

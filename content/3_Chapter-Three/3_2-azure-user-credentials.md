@@ -4,12 +4,12 @@ linkTitle: "Task 1: User Credentials"
 weight: 1
 ---
 
-These are the credentials that are used throughout the session.  It is recommended you open this page in a new tab for quick reference.
+These are the credentials that are used throughout the session.
 
 ## Azure Portal Login
 
 - U:  <vwanXX@fortinetcloud.onmicrosoft.com>  (User Specific)
-- P:  You will be given a unique token for login. Please use the token as password.
+- P:  A unique token will be provided for login. Please use the token as password.
 
 ## Linux host username and passwords
 

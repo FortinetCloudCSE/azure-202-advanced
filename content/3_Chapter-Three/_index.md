@@ -3,7 +3,7 @@ title: "Chapter 3: Getting Started"
 weight: 30
 ---
 
-In this chapter, review the lab credentials, and login to the Azure portal with your assign credentials.
+In this chapter, review the credentials and login to the Azure portal with the assign credentials.
 
 ## Overview
 

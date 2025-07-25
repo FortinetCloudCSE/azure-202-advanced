@@ -17,9 +17,9 @@ Azure Virtual WAN is a networking service that brings many networking, security,
 - VPN ExpressRoute inter-connectivity.
 - Routing, Azure Firewall, and encryption for private connectivity.
 
-You don't have to have all of these use cases to start using Virtual WAN. You can get started with just one use case, and then adjust your network as it evolves.
+All of these use cases are not required to start using Virtual WAN. Get started with just one use case and adjust as the network needs evolve.
 
-The Virtual WAN architecture is a hub and spoke architecture with scale and performance built in for branches (VPN/SD-WAN devices), users (Azure VPN/OpenVPN/IKEv2 clients), ExpressRoute circuits, and virtual networks. It enables a global transit network architecture, where the cloud hosted network 'hub' enables transitive connectivity between endpoints that might be distributed across different types of 'spokes'.
+The Virtual WAN follows a hub and spoke architecture with scale and performance built in for branches (VPN/SD-WAN devices), users (Azure VPN/OpenVPN/IKEv2 clients), ExpressRoute circuits, and virtual networks. Enabling a global transit network architecture, where the cloud hosted network 'hub' provides transitive connectivity between endpoints that can be distributed across different types of 'spokes'.
 
 **Virtual WAN offers the following advantages:**
 

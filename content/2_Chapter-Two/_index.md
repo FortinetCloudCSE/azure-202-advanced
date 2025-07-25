@@ -4,7 +4,7 @@ weight: 20
 ---
 
 
-In this chapter, you will learn about Azure vWAN managed service and the key components that make up a virtual WAN.  These terms and services will be used extensively in this course.
+This chapter covers Azure vWAN managed service and the key components that make up a virtual WAN.  These terms and services will be used extensively in this course.
 
 ## Overview
 
