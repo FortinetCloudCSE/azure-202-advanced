@@ -105,7 +105,6 @@ Create the following addresses and firewall policies **on both** FortiGates.
             next
             edit 0
                 set name "Spoke3_to_Spoke1_and_Spoke2"
-                set uuid 68e6a984-67f1-51f0-fb98-940bc833bac7
                 set srcintf "port2"
                 set dstintf "port2"
                 set action accept

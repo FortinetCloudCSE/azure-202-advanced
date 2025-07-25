@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud - 202 - Secured Azure FortiGate Integrated vWAN Hub"
+title: "Public Cloud 202: Azure Networking with vWAN Internet Inbound"
 menuTitle: "XPERTS Session"
 weight: 1
 archetype: home

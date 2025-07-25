@@ -14,7 +14,7 @@
   "shortcuts": [
     {
       "text": "Xperts Presentation",
-      "URL": "Xperts-2024-AZURE-202.pdf",
+      "URL": "Xperts-2025-AZURE-202.pdf",
       "icon": "fa-lightbulb",
       "weight":10
     },
@@ -37,10 +37,16 @@
       "weight":40
     },
     {
-      "text": "FortiGate SD-WAN NGFW Deployment",
-      "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.5/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview",
+      "text": "FortiGate SD-WAN+NGFW Deployment",
+      "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-sd-wan-ngfw-deployment-guide/12818/deployment-overview",
       "icon": "fa-tools",
       "weight":50
+    },
+    {
+      "text": "FortiGate NGFW Deployment",
+      "URL": "https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-ngfw-deployment-guide/12818/deployment-overview",
+      "icon": "fa-tools",
+      "weight":55
     },
     {
       "text": "FortiGate IPSEC/VPN Tunnels",
