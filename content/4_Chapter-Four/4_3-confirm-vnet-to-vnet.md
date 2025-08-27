@@ -40,10 +40,10 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
 1. ***Login*** to Linux-Spoke1-VM:
 
-    - username `fortixperts`
-    - password `fortiXperts!`
+    - username `fortixpert`
+    - password `fortiXpert!`
 
-1. ***Ping*** Linux-Spoke2-VM:
+1. ***Ping*** Linux-Spoke2-VM from Linux-Spoke1-VM:
 
     - `ping 192.168.2.4`
 
@@ -53,9 +53,9 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
     - Repeat previous steps to access the serial console of ***Linux-Spoke2-VM***
 
-1. ***Ping*** Linux-Spoke1-VM:
+1. ***Ping*** Linux-Spoke1-VM from Linux-Spoke2-VM:
 
-    - `ping 192.168.2.4`
+    - `ping 192.168.1.4`
 
 1. ***wget*** the Fortinet home page both Linux VMs:
 
