@@ -18,7 +18,7 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
         Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
-        ![eastwestping1](../images/5_1-east-west-net-traffic-1.PNG) | ![eastwestping2](../images/5_1-east-west-net-traffic-2.PNG)
+        {{< figure src="5_1-east-west-net-traffic-1.PNG" >}} | {{< figure src="5_1-east-west-net-traffic-2.PNG" >}}
 
     Neither ping will be successful because the FortiGates are not allowing traffic from port2 to port2, even though port2 would be considered *trusted* since the traffic is all internal. This is the FortiGate's ability to micro-segment the traffic.
 
@@ -35,7 +35,7 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
         FortiGate 0 | FortiGate 1
         :-:|:-:
-        ![fgtpingdiag1](../images/5_1-east-west-net-traffic-3.PNG) | ![fgtpingdiag2](../images/fgtpingdiag2.jpg)
+        {{< figure src="5_1-east-west-net-traffic-3.PNG" >}} | {{< figure src="fgtpingdiag2.jpg" >}}
 
     The ping traffic is only on one FortiGate, this is because the internal load balancer sends traffic from the Spokes to one of the FortiGates for inspection.
 
@@ -63,7 +63,7 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
     - ***Click*** "OK"
 
-        ![firewall1](../images/firewall1.jpg)
+      {{< figure src="firewall1.png" >}}
 
 1. ***Ping*** between Linux Spoke VMs and confirm connectivity.
     - Linux-Spoke1-VM - `ping 192.168.2.4`
@@ -72,10 +72,10 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
         Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
-        ![eastwestping3](../images/5_1-east-west-net-traffic-4.PNG) | ![eastwestping4](../images/5_1-east-west-net-traffic-5.PNG)
+        {{< figure src="5_1-east-west-net-traffic-4.PNG" >}} | {{< figure src="5_1-east-west-net-traffic-5.PNG" >}}
 
         FortiGate 0 | FortiGate 1
         :-:|:-:
-        ![fgtpingdiag3](../images/5_1-east-west-net-traffic-6.PNG) | ![fgtpingdiag4](../images/fgtpingdiag4.jpg)
+        {{< figure src="5_1-east-west-net-traffic-6.PNG" >}} | {{< figure src="fgtpingdiag4.jpg" >}}
 
 **Continue to Chapter 5 - Task 2: North-South Network Traffic**
