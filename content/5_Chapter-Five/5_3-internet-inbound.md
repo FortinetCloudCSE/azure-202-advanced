@@ -100,7 +100,7 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
 
     ![5_3-internet-inbound-7](../images/5_3-internet-inbound-7.png)
 
-1. ***Create*** Firewall policies **on both** FortiGates to allow traffic to pass from port2 to port1 (Spoke to Internet)
+1. ***Create*** Firewall policies **on both** FortiGates to allow traffic to pass from port1 to port2 (Internet to Spoke)
 
     The FortiGates can be setup to sync configuration information. If one of the FortiGates was designated as the primary configuration supplier and the other as a secondary, any changes made to the primary would be replicated to the secondary.
 
