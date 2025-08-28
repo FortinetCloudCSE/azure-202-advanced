@@ -12,13 +12,13 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
 
 1. ***Navigate*** into your assigned Resource Group and click on the **+ Create** located at the top left of the tool bar.
 
-    ![6_3-deploy-vm-1](../images/6_3-deploy-vm-1.PNG)  
+    {{< figure src="6_3-deploy-vm-1.PNG" alt="6_3-deploy-vm-1" >}}  
 
     You will be redirected to the Azure Marketplace.
 
 1. ***Enter***  - **ubuntu 24.10** - in the Marketplace search bar, then press enter.  Navigate to the **Ubuntu 24.10** offering from **Canonical** and select **Create** and **Ubuntu Server 24.10**.
 
-    ![6_3-deploy-vm-2](../images/6_3-deploy-vm-2.PNG)
+    {{< figure src="6_3-deploy-vm-2.PNG" alt="6_3-deploy-vm-2" >}}
 
     You will be redirected to the **Create a virtual machine** template.
 
@@ -34,7 +34,7 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
       - ***Search*** for "F2s_v2"
       - ***Click*** on the VM to highlight
       - ***Click*** the "Select" button
-          ![6_3-deploy-vm-3](../images/6_3-deploy-vm-3.PNG)
+          {{< figure src="6_3-deploy-vm-3.PNG" alt="6_3-deploy-vm-3" >}}
     - **Authentication type**:  **Password**
     - **Username**:  **fortixperts**
     - **Password**:  **fortiXperts!**
@@ -42,7 +42,7 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram.
 
-    ![6_3-deploy-vm-4](../images/6_3-deploy-vm-4.PNG)
+    {{< figure src="6_3-deploy-vm-4.PNG" alt="6_3-deploy-vm-4" >}}
 
 1. ***Click*** **Next: Disks >**
     Feel free to read through the available disk services that can be changed/enabled.
@@ -58,7 +58,7 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram
 
-    ![6_3-deploy-vm-5](../images/6_3-deploy-vm-5.PNG)
+    {{< figure src="6_3-deploy-vm-5.PNG" alt="6_3-deploy-vm-5" >}}
 
 1. ***Click*** **Review + create >**
 
@@ -68,11 +68,11 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
 
 1. ***Click*** **Create**
 
-    ![6_3-deploy-vm-6](../images/6_3-deploy-vm-6.PNG)
+    {{< figure src="6_3-deploy-vm-6.PNG" alt="6_3-deploy-vm-6" >}}
 
     {{% notice info %}}The **Deployment is in progress** notice is displayed and then the **Your deployment is complete** notice is displayed. {{% /notice %}}
 
-    ![6_3-deploy-vm-7](../images/6_3-deploy-vm-7.PNG)
+    {{< figure src="6_3-deploy-vm-7.PNG" alt="6_3-deploy-vm-7" >}}
 
 1. ***Click*** on the **vwanXX-training** link to be re-directed to your resource group.
 

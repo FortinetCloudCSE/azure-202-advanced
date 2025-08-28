@@ -17,9 +17,9 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
         Load Balancer Rules are required to allow traffic inbound. Each rule specifies IP, Port, and Protocol
     1. ***Copy*** the Name (vwanxx-slb-pip) and IP address to a notepad
 
-    ![5_3-internet-inbound-1](../images/5_3-internet-inbound-1.png)
+    {{< figure src="5_3-internet-inbound-1.png" alt="5_3-internet-inbound-1" >}}
 
-    ![5_3-internet-inbound-2](../images/5_3-internet-inbound-2.png)
+    {{< figure src="5_3-internet-inbound-2.png" alt="5_3-internet-inbound-2" >}}
 
 1. To access the CLI on your FortiGate NVAs, following these steps:
 
@@ -29,19 +29,19 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
     1. ***Note*** FortiGate Public IP and Private IP addresses
     1. ***Open*** a browser tab to each FortiGate using the Public IP address of each FortiGate
 
-        ![4_2-configure-fgsp-1](../images/4_2-configure-fgsp-1.PNG)
-        ![4_2-configure-fgsp-2](../images/4_2-configure-fgsp-2.PNG)
+        {{< figure src="4_2-configure-fgsp-1.PNG" alt="4_2-configure-fgsp-1" >}}
+        {{< figure src="4_2-configure-fgsp-2.PNG" alt="4_2-configure-fgsp-2" >}}
 
 1. ***Login*** to the Fortigate with ***_0*** suffix by using the Public IP address with the provided credentials. Example: **vwanxx-sdfw-52g467ulivt5i_0**
 
-    ![5_3-internet-inbound-3](../images/5_3-internet-inbound-3.png)
+    {{< figure src="5_3-internet-inbound-3.png" alt="5_3-internet-inbound-3" >}}
 
 1. ***Click*** on the ***>_*** at the top right corner.
 
     - ***Copy*** this command `exec azure vwan-slb show`
     - ***Note*** Should see output like below
 
-    ![5_3-internet-inbound-4](../images/5_3-internet-inbound-4.png)
+    {{< figure src="5_3-internet-inbound-4.png" alt="5_3-internet-inbound-4" >}}
 
 1. ***Copy*** the below configuration to create rules on the loadbalancer. 
 
@@ -75,9 +75,9 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
     1. ***Click*** Internet Inbound.
     1. ***Click*** Rules to show the rules associated with Public IP address.
 
-    ![5_3-internet-inbound-5](../images/5_3-internet-inbound-5.png)
+    {{< figure src="5_3-internet-inbound-5.png" alt="5_3-internet-inbound-5" >}}
 
-    ![5_3-internet-inbound-6](../images/5_3-internet-inbound-6.png)
+    {{< figure src="5_3-internet-inbound-6.png" alt="5_3-internet-inbound-6" >}}
 
 1. ***Login*** to both the NVA FortiGate's again to create a VIP to the web Server **on both** FortiGates.
 
@@ -98,7 +98,7 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
 
     1. ***Click*** "OK"
 
-    ![5_3-internet-inbound-7](../images/5_3-internet-inbound-7.png)
+    {{< figure src="5_3-internet-inbound-7.png" alt="5_3-internet-inbound-7" >}}
 
 1. ***Create*** Firewall policies **on both** FortiGates to allow traffic to pass from port1 to port2 (Internet to Spoke)
 
@@ -124,13 +124,13 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
 
     - ***Click*** "OK"
 
-    ![5_3-internet-inbound-8](../images/5_3-internet-inbound-8.png)
+    {{< figure src="5_3-internet-inbound-8.png" alt="5_3-internet-inbound-8" >}}
 
 1. ***Navigate*** to a web browser and check if able to reach the web server with vwanxx-slb-pip IP that was used in creating the VIP and port 8080
 
 - http://***vwanxx-slb-pip***:8080
 
-    ![5_3-internet-inbound-9](../images/5_3-internet-inbound-9.png)
+    {{< figure src="5_3-internet-inbound-9.png" alt="5_3-internet-inbound-9" >}}
 
 
 **Continue to Chapter 6 - Two vWAN Hubs**

@@ -22,7 +22,7 @@ Then second part of this task it to verify routing by viewing the routing tables
     - ***Select*** - "Virtual Network" - Spoke1 VNET - **Spoke1-vHub1_VNET**
     - ***Click*** - "Create"
 
-    ![4_5-vnet-peering-verify-1](../images/4_5-vnet-peering-verify-1.PNG)
+    {{< figure src="4_5-vnet-peering-verify-1.PNG" alt="4_5-vnet-peering-verify-1" >}}
 
 1. ***Peer*** **Spoke2-vHub1_VNET**
 
@@ -36,11 +36,11 @@ Then second part of this task it to verify routing by viewing the routing tables
     - ***Select*** - "Virtual Network" - Spoke2 VNET - **Spoke2-vHub1_VNET**
     - ***Click*** - "Create"
 
-        ![4_5-vnet-peering-verify-2](../images/4_5-vnet-peering-verify-2.PNG)
+        {{< figure src="4_5-vnet-peering-verify-2.PNG" alt="4_5-vnet-peering-verify-2" >}}
 
         {{% notice info %}}VNET Peering takes a few minutes to complete. The Connectivity Status can be reviewed by ***Clicking*** Refresh{{% /notice %}}
 
-        ![4_5-vnet-peering-verify-3](../images/4_5-vnet-peering-verify-3.PNG)
+        {{< figure src="4_5-vnet-peering-verify-3.PNG" alt="4_5-vnet-peering-verify-3" >}}
 
 ### Verify Routing
 
@@ -60,7 +60,7 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
     - ***Open*** FortiGate CLI
     - ***Run*** CLI command `get router info routing-table all`
 
-        ![4_5-vnet-peering-verify-4](../images/4_5-vnet-peering-verify-4.PNG)
+        {{< figure src="4_5-vnet-peering-verify-4.PNG" alt="4_5-vnet-peering-verify-4" >}}
 
     The output shows that BGP routes have been learned for the two Spoke VNETs that were peered to the Hub
 
@@ -73,7 +73,7 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
   
         All effective routes should have the FortiGate NVA group as next hop.
 
-        ![4_5-vnet-peering-verify-5](../images/4_5-vnet-peering-verify-5.PNG)
+        {{< figure src="4_5-vnet-peering-verify-5.PNG" >}}
 
 1. ***View*** the effective routes on the spoke Linux VMs
 
@@ -84,14 +84,14 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
 
     - Repeat for **Linux-Spoke2-VM**
 
-        ![routing3](../images/routing3.jpg)
-        ![routing4](../images/routing4.jpg)
-        ![4_5-vnet-peering-verify-6](../images/4_5-vnet-peering-verify-6.PNG)
+        {{< figure src="routing3.jpg" alt="routing3" >}}
+        {{< figure src="routing4.jpg" alt="routing4" >}}
+        {{< figure src="4_5-vnet-peering-verify-6.PNG" alt="4_5-vnet-peering-verify-6" >}}
 
     **The effective route's next hop IP is the IP address of internal load balancer that is deployed in the vWAN hub with the FortiGate NVAs.**
 
 The diagram below is a visual representation of what you have deployed and configured.  Congrats!
 
-![1_1-az-vwan-single-hub-ra](../images/1_1-az-vwan-single-hub-ra.PNG)
+{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
 **Continue to Chapter 5 - Network Traffic Management**

@@ -20,8 +20,8 @@ Create the following addresses and firewall policies **on both** FortiGates.
     - ***IP/Netmask***:  `192.168.1.0/24`
     - ***Click*** OK
 
-    ![6_5-manage-net-hubs-1](../images/6_5-manage-net-hubs-1.PNG)
-    ![6_5-manage-net-hubs-2](../images/6_5-manage-net-hubs-2.PNG)
+    {{< figure src="6_5-manage-net-hubs-1.PNG" alt="6_5-manage-net-hubs-1" >}}
+    {{< figure src="6_5-manage-net-hubs-2.PNG" alt="6_5-manage-net-hubs-2" >}}
 
 1. ***Follow*** the above steps to create these addresses on port2
 
@@ -47,7 +47,7 @@ Create the following addresses and firewall policies **on both** FortiGates.
         end
         ```
 
-    ![6_5-manage-net-hubs-3](../images/6_5-manage-net-hubs-3.PNG)
+    {{< figure src="6_5-manage-net-hubs-3.PNG" alt="6_5-manage-net-hubs-3" >}}
 
 1. ***Create*** firewall policy to allow traffic to pass from Spoke1 to Spoke3 on **both FortiGates**.
 
@@ -70,8 +70,8 @@ Create the following addresses and firewall policies **on both** FortiGates.
 
     - ***Click*** "OK"
 
-    ![6_5-manage-net-hubs-4](../images/6_5-manage-net-hubs-4.PNG)
-    ![6_5-manage-net-hubs-5](../images/6_5-manage-net-hubs-5.PNG)
+    {{< figure src="6_5-manage-net-hubs-4.PNG" alt="6_5-manage-net-hubs-4" >}}
+    {{< figure src="6_5-manage-net-hubs-5.PNG" alt="6_5-manage-net-hubs-5" >}}
 
 1. ***Follow*** the above steps to create these firewall policies on **both FortiGates**.
 

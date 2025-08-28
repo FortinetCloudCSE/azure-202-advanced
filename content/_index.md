@@ -19,6 +19,6 @@ The course continues with the deployment of active/active FortiGate NVAs to secu
 - Manage North/South network traffic - Spoke-to-Internet
 - Deploy a second vWAN hub, create and peer a VNET, and manage network traffic between the vWAN hubs
 
-![fortigateVWAN](/images/1_1-az-vwan-single-hub-ra.PNG)
+{{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
 **Continue to Chapter 1: Reference Diagrams**

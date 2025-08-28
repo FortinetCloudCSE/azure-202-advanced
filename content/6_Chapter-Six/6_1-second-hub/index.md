@@ -23,8 +23,8 @@ The initial vWAN hub setup was already done for you before the session. Now you 
     - ***Select*** - Hub routing preference "AS Path"
     - ***Click*** - "Next: Site to Site" button
 
-        ![6_1-second-hub-1](../images/6_1-second-hub-1.PNG)
-        ![6_1-second-hub-2](../images/6_1-second-hub-2.PNG)
+        {{< figure src="6_1-second-hub-1.PNG" alt="6_1-second-hub-1" >}}
+        {{< figure src="6_1-second-hub-2.PNG" alt="6_1-second-hub-2" >}}
 
     - ***Click*** - "Next: Point to Site" button
     - ***Click*** - "Next: ExpressRoute" button
@@ -32,15 +32,15 @@ The initial vWAN hub setup was already done for you before the session. Now you 
     - ***Click*** - "Next: Review + create" button
     - ***Click*** - "Next: Create" button
 
-        ![hub3](../images/hub3.jpg)
-        ![hub4](../images/hub4.jpg)
-        ![hub5](../images/hub5.jpg)
-        ![hub6](../images/hub6.jpg)
-        ![6_1-second-hub-3](../images/6_1-second-hub-3.PNG)
+        {{< figure src="hub3.jpg" alt="hub3" >}}
+        {{< figure src="hub4.jpg" alt="hub4" >}}
+        {{< figure src="hub5.jpg" alt="hub5" >}}
+        {{< figure src="hub6.jpg" alt="hub6" >}}
+        {{< figure src="6_1-second-hub-3.PNG" alt="6_1-second-hub-3" >}}
 
         {{% notice tip %}}A deployment progress screen will be shown followed by a deployment completion screen. Hub deployment can take up to 30 minutes. Leave this browser tab open until you confirm the deployment has completed.  Open the Azure portal in another browser tab and continue with the next task.{{% /notice %}}
 
-        ![hub8](../images/hub8.jpg)
-        ![hub9](../images/hub9.jpg)
+        {{< figure src="hub8.jpg" alt="hub8" >}}
+        {{< figure src="hub9.jpg" alt="hub9" >}}
 
 **Continue to Chapter 6 - Task 2: Deploy a VNET**

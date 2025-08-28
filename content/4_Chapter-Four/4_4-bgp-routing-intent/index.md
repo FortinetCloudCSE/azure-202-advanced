@@ -17,7 +17,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Navigate*** to your assigned hub **vwanXX-eastus-vHub1_VHUB**
     - ***View*** hub address space
 
-        ![4_4-bgp-routing-intent-1](../images/4_4-bgp-routing-intent-1.PNG)
+        {{< figure src="4_4-bgp-routing-intent-1.PNG" alt="4_4-bgp-routing-intent-1" >}}
 
 1. ***View*** FortiGate BGP peer status
 
@@ -25,7 +25,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - **Open** FortiGate CLI
     - **Run** CLI command `get router info bgp summary` to view BGP Peer status
 
-        ![bgp0](../images/bgp0.jpg)
+        {{< figure src="bgp0.jpg" alt="bgp0" >}}
 
 1. ***Determine*** FortiGate NVA port2 Gateway
 
@@ -41,7 +41,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - Network address is **10.1.112.0**
     - Gateway address is **10.1.112.1**
 
-        ![4_4-bgp-routing-intent-2](../images/4_4-bgp-routing-intent-2.PNG)
+        {{< figure src="4_4-bgp-routing-intent-2.PNG" alt="4_4-bgp-routing-intent-2" >}}
 
 1. ***Configure*** Static Routes on each FortiGate
 
@@ -54,7 +54,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Click*** Static Routes
     - ***Click*** Create New
 
-        ![bgp3](../images/bgp3.jpg)
+        {{< figure src="bgp3.jpg" alt="bgp3" >}}
 
 1. ***Create*** a static route
 
@@ -63,11 +63,11 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Select*** Interface - **port2**
     - ***Click*** "OK"
 
-        ![bgp4](../images/bgp4.jpg)
+        {{< figure src="bgp4.jpg" alt="bgp4" >}}
 
 1. ***Repeat*** the process to add a static route for the Azure internal load balancer health probe
 
-    Refer to the overall [architecture](../images/1_1-az-vwan-single-hub-ra.PNG) for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
+    Refer to the overall [{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}) for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
 
     The static route destination below is the default Azure load balancer health probe destination.
 
@@ -81,7 +81,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
 
     When completed the static routes of each FortiGate should look similar to the screenshot below.
 
-    ![bgp5](../images/bgp5.jpg)
+    {{< figure src="bgp5.jpg" alt="bgp5" >}}
 
 1. ***Verify*** BGP communication between FortiGate NVAs
 
@@ -91,7 +91,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - **Open** FortiGate CLI
     - **Run** CLI command `get router info bgp summary`
 
-        ![bgp6](../images/bgp6.jpg)
+        {{< figure src="bgp6.jpg" alt="bgp6" >}}
 
     More information about FortiGate static routes and BGP can be found in [Fortinet documents](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-ngfw-deployment-guide/860717/configuring-static-routes-and-enabling-bgp-on-fortigate-nvas).
 
@@ -108,6 +108,6 @@ Routing Intent and Routing Policies allow you to configure the Virtual WAN hub t
     - ***Select*** - for **both** "Next Hop Resources" - your cluster name (the only selection in the dropdown)
     - ***Click*** - "Save" to update Routing Intent
 
-    ![4_4-bgp-routing-intent-3](../images/4_4-bgp-routing-intent-3.PNG)
+    {{< figure src="4_4-bgp-routing-intent-3.PNG" alt="4_4-bgp-routing-intent-3" >}}
 
 **Continue to Chapter 4 - Task 5: VNET Peering and Verifying Routing**

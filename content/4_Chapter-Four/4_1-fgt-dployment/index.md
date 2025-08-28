@@ -8,11 +8,11 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
 1. ***Click*** on VWAN **vwanXX-training_VWAN** in your Resource Group. **XX** is your assigned number.
 
-    ![4_1-fortigate-deployment-10](../images/4_1-fortigate-deployment-10.PNG)
+    {{< figure src="4_1-fortigate-deployment-10.PNG" alt="4_1-fortigate-deployment-10" >}}
 
 1. ***Click*** on "Hubs" in the "Connectivity" section of the left-hand navigation. A hub in EastUS has already been deployed.
 
-    ![4_1-fortigate-deployment-11](../images/4_1-fortigate-deployment-11.PNG)
+    {{< figure src="4_1-fortigate-deployment-11.PNG" alt="4_1-fortigate-deployment-11" >}}
 
 1. ***Click*** on your assigned hub
 
@@ -27,7 +27,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - Hub status: **Succeeded**
     - Routing status: **Provisioned**
 
-    ![4_1-fortigate-deployment-12](../images/4_1-fortigate-deployment-12.PNG)
+    {{< figure src="4_1-fortigate-deployment-12.PNG" alt="4_1-fortigate-deployment-12" >}}
 
     {{% notice warning %}}**Only** move on to the next step if Hub and Routing status have green checks.{{% /notice %}}
 
@@ -36,15 +36,15 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 1. ***Select*** fortinet-sdwan-and-ngfw
 1. ***Click*** "Create" -  proceed to leave site to redirect to Marketplace.
 
-    ![vwan4](../images/vwan4.jpg)
+    {{< figure src="vwan4.jpg" alt="vwan4" >}}
 
      {{% notice info %}}If a warning is displayed about "Leaving" the site, select the **Leave page** button.{{% /notice %}}
 
-    ![4_1-fortigate-deployment-2](../images/4_1-fortigate-deployment-2.PNG)
+    {{< figure src="4_1-fortigate-deployment-2.PNG" alt="4_1-fortigate-deployment-2" >}}
 
 1. ***Click*** "Create" on the Marketplace listing for "**Azure Virtual WAN Secured by FortiGate**"
 
-    ![4_1-fortigate-deployment-4](../images/4_1-fortigate-deployment-4.PNG)
+    {{< figure src="4_1-fortigate-deployment-4.PNG" alt="4_1-fortigate-deployment-4" >}}
 
 1. On the "Create Azure Virtual WAN Secured by FortiGate" window, enter the following values in the **Basics** tab:
 
@@ -61,7 +61,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Update*** - Managed Resource Group - Append "**_vwanXX**" to the provided name -- *Enter your assigned lab number for XX.*
     - ***Click*** - "**Next**"
 
-    ![4_1-fortigate-deployment-3_1](../images/4_1-fortigate-deployment-3_1.PNG)
+    {{< figure src="4_1-fortigate-deployment-3_1.PNG" alt="4_1-fortigate-deployment-3_1" >}}
 
 1. On the **FortiGate in Virtual WAN Specific Parameters** tab, enter the following values:
 
@@ -70,7 +70,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Leave*** all other items as is
     - ***Click*** "Next"
 
-    ![4_1-fortigate-deployment-5](../images/4_1-fortigate-deployment-5.PNG)
+    {{< figure src="4_1-fortigate-deployment-5.PNG" alt="4_1-fortigate-deployment-5" >}}
 
 1. On the **PublicIP Verification** tab, select "Next".
 
@@ -78,7 +78,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
 1. on the **Managed Application Settings** tab, click "Add"
 
-    ![4_1-fortigate-deployment-6_1](../images/4_1-fortigate-deployment-6_1.png)
+    {{< figure src="4_1-fortigate-deployment-6_1.png" alt="4_1-fortigate-deployment-6_1" >}}
 
 1. on the **add User assigned managed identity**, 
 
@@ -86,11 +86,11 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Select*** **id-us-xperts-2025-public-cloud-202**
     - ***Click*** "Add"
 
-    ![4_1-fortigate-deployment-6_2](../images/4_1-fortigate-deployment-6_2.png)
+    {{< figure src="4_1-fortigate-deployment-6_2.png" alt="4_1-fortigate-deployment-6_2" >}}
 
 1. on the **Managed Application Settings** tab, make sure to verify it looks like below, click "Next"
 
-    ![4_1-fortigate-deployment-6_3](../images/4_1-fortigate-deployment-6_3.png)
+    {{< figure src="4_1-fortigate-deployment-6_3.png" alt="4_1-fortigate-deployment-6_3" >}}
 
 1. On the **Tags** tab, select "Next".
 
@@ -101,14 +101,14 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
     - ***Scroll*** down to agree to the terms and conditions
     - ***Click*** "Create"
 
-    ![4_1-fortigate-deployment-7](../images/4_1-fortigate-deployment-7.PNG)
+    {{< figure src="4_1-fortigate-deployment-7.PNG" alt="4_1-fortigate-deployment-7" >}}
 
     {{% notice info %}}The FortiGate NVAs take about 15 minutes to deploy. Grab a refreshment and relax! You will see the screen belows when the deployment is in progress and when complete.{{% /notice %}}
 
-    ![4_1-fortigate-deployment-8](../images/4_1-fortigate-deployment-8.PNG)
+    {{< figure src="4_1-fortigate-deployment-8.PNG" alt="4_1-fortigate-deployment-8" >}}
 
 1. ***Click*** on your assigned **Resource Group** to return to your Resource Group and prepare for the next task.
 
-    ![4_1-fortigate-deployment-9](../images/4_1-fortigate-deployment-9.PNG)
+    {{< figure src="4_1-fortigate-deployment-9.PNG" alt="4_1-fortigate-deployment-9" >}}
 
 **Continue to Chapter 4 - Task 2: Configure FGSP**

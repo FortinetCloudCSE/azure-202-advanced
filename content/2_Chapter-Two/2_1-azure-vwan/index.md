@@ -3,7 +3,7 @@ title: "Task 1: Azure Virtual WAN"
 weight: 1
 ---
 
-![1_1-az-vwan-single-hub-ra](../images/1_1-az-vwan-single-hub-ra.PNG)
+{{< figure src="1_1-az-vwan-single-hub-ra.PNG" alt="1_1-az-vwan-single-hub-ra" >}}
 
 ### Azure Virtual WAN
 

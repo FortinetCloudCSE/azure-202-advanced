@@ -3,7 +3,7 @@ title: "Task 2: Azure vWAN Resources"
 weight: 2
 ---
 
-![2_2-azure-vwan-resources](../images/2_2-azure-vwan-resources.PNG)
+{{< figure src="2_2-azure-vwan-resources.PNG" alt="2_2-azure-vwan-resources" >}}
 
 ### Azure vWAN Resources
 

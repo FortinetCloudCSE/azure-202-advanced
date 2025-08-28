@@ -16,8 +16,8 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
     1. ***Note*** FortiGate Public IP and Private IP addresses
     1. ***Open*** a browser tab to each FortiGate using the Public IP address of each FortiGate
 
-        ![4_2-configure-fgsp-1](../images/4_2-configure-fgsp-1.PNG)
-        ![4_2-configure-fgsp-2](../images/4_2-configure-fgsp-2.PNG)
+        {{< figure src="4_2-configure-fgsp-1.PNG" >}}
+        {{< figure src="4_2-configure-fgsp-2.PNG" >}}
 
 1. ***Configure*** FGSP
 

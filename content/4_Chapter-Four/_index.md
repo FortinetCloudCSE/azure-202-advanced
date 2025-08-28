@@ -16,6 +16,6 @@ In this chapter, navigate to the assigned vWAN hub and deploy a pair of Fortigat
 
 After you have completed the above tasks, the diagram below is a visual representation of what you will have deployed and configured.
 
-![1_1-az-vwan-single-hub-ra](../images/1_1-az-vwan-single-hub-ra.PNG)
+{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
 **Continue to Chapter 4 - Task 1: - FortiGate NVA Deployment**

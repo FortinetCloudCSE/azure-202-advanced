@@ -18,11 +18,11 @@ In this task setup peering between the Spoke3-vHub2_VNET and the vwanXX-westus-v
     - ***Select*** - "Virtual Network" - Spoke3 VNET - **Spoke3-vHub2_VNET**
     - ***Click*** - "Create"
 
-        ![6_4-peer-vnet-hub2-1](../images/6_4-peer-vnet-hub2-1.PNG)
+        {{< figure src="6_4-peer-vnet-hub2-1.PNG" alt="6_4-peer-vnet-hub2-1" >}}
 
         {{% notice info %}}VNET Peering takes a few minutes to complete. The Connectivity Status can be updated by ***Clicking*** Refresh{{% /notice %}}
 
-        ![6_4-peer-vnet-hub2-2](../images/6_4-peer-vnet-hub2-2.PNG)
+        {{< figure src="6_4-peer-vnet-hub2-2.PNG" alt="6_4-peer-vnet-hub2-2" >}}
 
 ### Verify Route Tables
 
@@ -38,7 +38,7 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
     - ***Open*** FortiGate CLI
     - ***Run*** CLI command `get router info routing-table all`
 
-        ![6_4-peer-vnet-hub2-3](../images/6_4-peer-vnet-hub2-3.PNG)
+        {{< figure src="6_4-peer-vnet-hub2-3.PNG" alt="6_4-peer-vnet-hub2-3" >}}
 
     The output shows that BGP learned routes for the new Spoke3-vHub2_VNET peered to the new vwanXX-westus-vHub2_VHUB.
 
@@ -53,7 +53,7 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
         ***All effective routes should have the FortiGate NVA group as next hop.***
         ***Note that nothing has changed in your vwanXX-eastus-vHub1_VHUB route table.***
 
-        ![4_5-vnet-peering-verify-5](../images/4_5-vnet-peering-verify-5.PNG)
+        {{< figure src="4_5-vnet-peering-verify-5.PNG" alt="4_5-vnet-peering-verify-5" >}}
 
     ***vHub2***
     - ***Navigate*** to your vWAN hub - **vwanXX-westus-vHub2_VHUB**
@@ -63,7 +63,7 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
   
         ***Note the three spoke VNETs learned by vHub2.***
 
-        ![6_4-peer-vnet-hub2-4](../images/6_4-peer-vnet-hub2-4.PNG)
+        {{< figure src="6_4-peer-vnet-hub2-4.PNG" alt="6_4-peer-vnet-hub2-4" >}}
 
 3. ***View*** the effective routes on the "Linux-Spoke3-VM"
 
@@ -73,13 +73,13 @@ Now that the ***Spoke3-vHub2_VNET*** has been peered to your second hub ***vwanX
     - One the next page, navigate to ***Help*** on the bottom left and ***Click*** - "Effective Routes"
 
     Effective routes for ***Linux-Spoke3-VM***
-    ![6_4-peer-vnet-hub2-4](../images/6_4-peer-vnet-hub2-5.PNG)
+    {{< figure src="6_4-peer-vnet-hub2-5.PNG" alt="6_4-peer-vnet-hub2-4" >}}
 
     **The effective route's next hop IP is the IP address of internal load balancer that is deployed in vHub2.**
 
 ---
 The diagram below is a visual representation of what you have deployed and configured.  ***Congrats!***
 
-![1_1-az-vwan-second-hub-ra](../images/1_1-az-vwan-second-hub-ra.PNG)
+{{< figure src="1_1-az-vwan-second-hub-ra.PNG" alt="1_1-az-vwan-second-hub-ra" >}}
 
 **Continue to Chapter 6 - Task 5: Manage Network Traffic Between Hubs**

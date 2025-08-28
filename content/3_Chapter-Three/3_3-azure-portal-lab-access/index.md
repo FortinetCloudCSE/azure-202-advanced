@@ -13,27 +13,27 @@ The work for this session takes place in Azure and on FortiGates deployed into t
 1. ***Navigate*** to [Azure Portal](https://portal.azure.com)
 1. ***Login*** with provided credentials
 
-    ![portallogin1](../images/portallogin1.png)
+    {{< figure src="portallogin1.png" alt="portallogin1" >}}
 
-    ![portallogin2](../images/portallogin2.png)
+    {{< figure src="portallogin2.png" alt="portallogin2" >}}
 
 1. ***Click*** "Yes" to "Stay singed in?"
 
-    ![portallogin2-5](../images/portallogin2-5.png)
+    {{< figure src="portallogin2-5.png" alt="portallogin2-5" >}}
 
 1. ***Click*** "Cancel" on the "Welcome to Microsoft Azure" page (if displayed)
 
-    ![portallogin2](../images/portallogin2.jpg)
+    {{< figure src="portallogin2.jpg" alt="portallogin2" >}}
 
 1. ***Click*** "Resource groups"
 
-    ![portallogin3](../images/portallogin3.png)
+    {{< figure src="portallogin3.png" alt="portallogin3" >}}
 
 1. ***Click*** your Resource Group named *vwanXX-training*. **XX** is the number of your allocated environment.
 
     {{% notice tip %}}In an Azure environment there can be many Resource Groups, use the search field to find your Resource Group.{{% /notice %}}
 
-    ![portallogin4](../images/portallogin4.png)
+    {{< figure src="portallogin4.png" alt="portallogin4" >}}
 
 1. ***View*** the already deployed resources already deployed
 
@@ -53,6 +53,6 @@ The work for this session takes place in Azure and on FortiGates deployed into t
         - **Linux-Spoke1-VM**
         - **Linux-Spoke2-VM**
 
-    ![portallogin5](../images/portallogin5.png)
+    {{< figure src="portallogin5.png" alt="portallogin5" >}}
 
 **Continue to Chapter 4 - Securing the Azure vWAN**

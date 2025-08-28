@@ -15,22 +15,22 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
     - **"Spoke1-vHub1_VNET"**
     - **"Spoke2-vHub1_VNET"**.
 
-        ![4_3-confirm-vnet-to-vnet-1](../images/4_3-confirm-vnet-to-vnet-1.PNG)
+        {{< figure src="4_3-confirm-vnet-to-vnet-1.PNG" alt="4_3-confirm-vnet-to-vnet-1" >}}
 
 1. VNET assigned address space can be determined by clicking on a VNET and viewing the **"Address space"** value on the right side of the "Overview" pane.
 
     VNET **Spoke1-vHub1_VNET** is shown below.
-    ![4_3-confirm-vnet-to-vnet-2](../images/4_3-confirm-vnet-to-vnet-2.PNG)
+    {{< figure src="4_3-confirm-vnet-to-vnet-2.PNG" alt="4_3-confirm-vnet-to-vnet-2" >}}
 
 1. ***Repeat*** the above steps to determine the **"Address space"** for **Spoke2-vHub1_VNET**.
 
 1. ***View*** the private IP addresses of the spoke VNET Linux VMs, navigate from your assigned resource group to each Linux VM - **"Linux-Spoke1-VM"** and **"Linux-Spoke2-VM"**.
 
-    ![4_3-confirm-vnet-to-vnet-3](../images/4_3-confirm-vnet-to-vnet-3.PNG)
+    {{< figure src="4_3-confirm-vnet-to-vnet-3.PNG" alt="4_3-confirm-vnet-to-vnet-3" >}}
 
     Linux-Spoke1-VM        | Linux-Spoke2-VM
     :-------------------------:|:-------------------------:
-    ![linuxvm1](../images/linuxvm1.jpg) |  ![linuxvm2](../images/linuxvm2.jpg)
+    {{< figure src="linuxvm1.jpg" alt="linuxvm1" >}} |  {{< figure src="linuxvm2.jpg" alt="linuxvm2" >}}
 
 1. Access the serial console on the Linux-Spoke1-VM.
 
@@ -47,7 +47,7 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
     - `ping 192.168.2.4`
 
-        ![4_3-confirm-vnet-to-vnet-5](../images/4_3-confirm-vnet-to-vnet-5.PNG)
+        {{< figure src="4_3-confirm-vnet-to-vnet-5.PNG" alt="4_3-confirm-vnet-to-vnet-5" >}}
 
 1. ***Ping*** **Linux-Spoke1-VM** from **Linux-Spoke2-VM**:
 
