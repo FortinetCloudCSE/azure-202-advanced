@@ -19,7 +19,7 @@ In this task create FortiGate firewall policies to allow North-South (Spoke to I
 
         Linux-Spoke1-VM | Linux-Spoke2-VM
         :-:|:-:
-        {{< figure src="northsouthping1.jpg" alt="northsouthping1" class="zoomable">}} | {{< figure src="northsouthping2.jpg" alt="northsouthping2" class="zoomable" >}}
+        {{< figure src="northsouthping1.jpg" alt="Zoom me" class="zoomable" >}} | {{< figure src="northsouthping2.jpg" alt="northsouthping2" class="zoomable" >}}
 
     However, the traffic from each VM **does reach the FortiGate**, but it is dropped. Firewall Policies are required to allow traffic to pass from port2 to port1, and then return back to the VM that originated the ping.
 
@@ -77,10 +77,10 @@ In this task create FortiGate firewall policies to allow North-South (Spoke to I
 
     Linux-Spoke1-VM | Linux-Spoke2-VM
     :-:|:-:
-    {{< figure src="northsouthping3.jpg" alt="northsouthping3" >}} | {{< figure src="northsouthping4.jpg" alt="northsouthping4" >}}
+    {{< figure src="northsouthping3.jpg" alt="northsouthping3" class="zoomable" >}} | {{< figure src="northsouthping4.jpg" alt="northsouthping4" class="zoomable">}}
 
     FortiGate 0 | FortiGate 1
     :-:|:-:
-    {{< figure src="fgtpingdiag7.jpg" alt="fgtpingdiag7" >}} | {{< figure src="5_2-north-south-net-traffic-2.PNG" alt="fgtpingdiag8" >}}
+    {{< figure src="fgtpingdiag7.jpg" alt="fgtpingdiag7" class="zoomable" >}} | {{< figure src="5_2-north-south-net-traffic-2.PNG" alt="fgtpingdiag8" class="zoomable" >}}
 
 **Continue to Chapter 5 - Task 3: Internet Inbound**
