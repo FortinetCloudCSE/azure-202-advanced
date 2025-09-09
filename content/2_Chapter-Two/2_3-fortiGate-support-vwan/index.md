@@ -25,7 +25,7 @@ Choose one of the following scale unit values when deploying FortiGate NVAs.  Hi
 
 {{< figure src="2_3-fortigate-support-vwan-sdwan-ngfw.PNG" alt="2_3-fortigate-support-vwan-sdwan-ngfw" >}}
 
-{{% notice tip %}}Azure has release new az cli commands that support changing the scale unit of a NVA with out the need to redeploy the environment. See [NVA Management](https://learn.microsoft.com/en-us/cli/azure/network/virtual-appliance?view=azure-cli-latest){{% /notice %}}
+{{% notice tip %}}Azure has released new az cli commands that support changing the scale unit of a NVA with out the need to redeploy the environment. See [NVA Management](https://learn.microsoft.com/en-us/cli/azure/network/virtual-appliance?view=azure-cli-latest){{% /notice %}}
 
 ### Deployment Requirements
 

@@ -4,6 +4,11 @@ menuTitle: "Chapter 6: Two vWAN Hubs"
 weight: 60
 ---
 
+|                            |                                                                                                                                                                   |  
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Goal**                   | Gain Experience with deploying a dual VWAN Hub in a different region                                                                                                                            |
+| **Task**                   | Deploy VWAN Hub, Create an Azure VNET, Deploy Linux VM, Peer the VNET to VWAN Hub and verify connectivity. 
+| **Validation** | Able to control and Route traffic between VNETs peered between two different Hubs 
 
 In chapter six deploy a second vWAN hub and create a VNET, peer the VNET to the new hub, deploy a Linux VM, and managed network connectivity between the two hubs.
 

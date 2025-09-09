@@ -4,6 +4,12 @@ menuTitle: "Chapter 4: Securing the Azure vWAN"
 weight: 40
 ---
 
+|                            |                                                                                                                                                                   |  
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Goal**                   | Gain Experience deploying FortiGate in VWAN                                                                                                                           |
+| **Task**                   | Deploy FortiGate in VWAN and configure FGSP once deployed, test VNET to VNET and Internet connectivity, configure BGP, enable Routing Intent, and peer VNETs with the vWAN hub.
+| **Validation** | FortiGate is deployed and connectivity to internet, VNET to VNET is working.  
+
 In this chapter, navigate to the assigned vWAN hub and deploy a pair of Fortigate NVAs to secure the vWAN.  After the FortiGates have been deployed, configure FGSP, test VNET to VNET and Internet connectivity, configure BGP, enable Routing Intent, and peer VNETs with the vWAN hub.
 
 ## Overview
