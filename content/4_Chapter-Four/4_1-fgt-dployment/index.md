@@ -3,6 +3,7 @@ title: "Task 1: FortiGate NVA Deployment"
 linkTitle: "Task 1: FortiGate NVA Deployment"
 weight: 1
 ---
+ 
 
 In task one, you will deploy a FortiGate NVA into the vWAN hub that you have been assigned.
 

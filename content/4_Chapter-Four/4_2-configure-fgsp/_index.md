@@ -4,7 +4,7 @@ linkTitle: "Task 2: Configure FGSP"
 weight: 2
 ---
 
-After the FortiGate NVA deployments are complete, the next step is to configure **FortiGate Session Life Support** [FGSP](https://docs.fortinet.com/document/fortigate/7.4.4/administration-guide/869218/fgsp-basic-peer-setup) on both FortiGates to enable session sync to support the Active-Active architecture.
+After the FortiGate NVA deployments are complete, the next step is to configure **FortiGate Session Life Support** [FGSP](https://docs.fortinet.com/document/fortigate/7.4.8/administration-guide/869218) on both FortiGates to enable session sync to support the Active-Active architecture.
 
 {{% notice tip %}}You will open a browser session to each FortiGate, the FortiGate GUI defaults to a 5 minute "Idle timeout". Avoid continually logging in by setting the idle timeout to 60 minutes in **System--> Settings:Administration Settings:Idle timeout**{{% /notice %}}
 
