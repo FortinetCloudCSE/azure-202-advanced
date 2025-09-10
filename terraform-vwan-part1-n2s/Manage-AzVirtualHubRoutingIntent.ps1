@@ -1,18 +1,28 @@
 <#
     .DESCRIPTION
-        Manage Azure Virtual Hub Routing Intent
+        Manage Azure Virtual Hub Routing Intent - List/Delete
+
+		Typically Step 2 in a sequence of scripts to clean up a VWAN deployment
+
+		Manage in the following order:
+		1. ./Manage-AzVirtualHubVnetConnection.ps1
+		2. ./Manage-AzVirtualHubRoutingIntent.ps1
+		3. ./Manage-AzManagedApplication.ps1
+		4. ./Manage-AzVirtualHub.ps1
 
     .NOTES
         AUTHOR: jmcdonough@fortinet.com
-        LASTEDIT: September 25, 2024
+        LASTEDIT: September 4, 2025
 
-	.Examples
+	.EXAMPLE
 		List
-		./Manage-AzVirtualHubRoutingIntent.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name lab-chile-?-training))
+		./Manage-AzVirtualHubRoutingIntent.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name vwan[2-3][0-9]-training))
 
 		List and Delete
-		./Manage-AzVirtualHubRoutingIntent.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name lab-chile-?-training)) -Delete
+		./Manage-AzVirtualHubRoutingIntent.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name vwan[2-3][0-9]-training)) -Delete
 
+		Get-AzResourceGroup -Name <-- supports regex
+		The regex in the example above will get resource groups named vwan20-training, vwan21-training, ..., vwan39-training
 #>
 
 param(

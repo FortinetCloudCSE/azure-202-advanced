@@ -1,18 +1,28 @@
 <#
     .DESCRIPTION
-        Manage Azure Virtual Hub Vnet Connections
+        Manage Azure Virtual Hub Vnet Connections  - List/Delete
+
+		Typically Step 1 in a sequence of scripts to clean up a VWAN deployment
+
+		Manage in the following order:
+		1. ./Manage-AzVirtualHubVnetConnection.ps1
+		2. ./Manage-AzVirtualHubRoutingIntent.ps1
+		3. ./Manage-AzManagedApplication.ps1
+		4. ./Manage-AzVirtualHub.ps1
 
     .NOTES
         AUTHOR: jmcdonough@fortinet.com
-        LASTEDIT: September 25, 2024
+        LASTEDIT: September 4, 2025
 
 	.Examples
 		List
-		./Manage-AzVirtualHubVnetConnection.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name lab-chile-?-training))
+		./Manage-AzVirtualHubVnetConnection.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name vwan[2-3][0-9]-training))
 
 		List and Delete
-		./Manage-AzVirtualHubVnetConnection.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name lab-chile-?-training)) -Delete
+		./Manage-AzVirtualHubVnetConnection.ps1 -ResourceGroups @($(Get-AzResourceGroup -Name vwan[2-3][0-9]-training)) -Delete
 
+		Get-AzResourceGroup -Name <-- supports regex
+		The regex in the example above will get resource groups named vwan20-training, vwan21-training, ..., vwan39-training
 #>
 
 param(
