@@ -37,7 +37,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 1. ***Select*** fortinet-sdwan-and-ngfw
 1. ***Click*** "Create" -  proceed to leave site to redirect to Marketplace.
 
-    {{< figure src="4_1-fortigate-deployment-1" alt="4_1-fortigate-deployment-1" >}}
+    {{< figure src="4_1-fortigate-deployment-1.png" alt="4_1-fortigate-deployment-1" >}}
 
      {{% notice info %}}If a warning is displayed about "Leaving" the site, select the **Leave page** button.{{% /notice %}}
 
@@ -75,7 +75,7 @@ In task one, you will deploy a FortiGate NVA into the vWAN hub that you have bee
 
 1. On the **Configuration Review** tab, select "Next".
 
-    {{< figure src="5_1-fortigate-deployment-5_1.png" alt="5_1-fortigate-deployment-5_1" >}}
+    {{< figure src="4_1-fortigate-deployment-5_1.png" alt="5_1-fortigate-deployment-5_1" >}}
 
 1. on the **Managed Application Settings** tab, click "Add"
 
