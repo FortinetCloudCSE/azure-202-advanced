@@ -22,6 +22,6 @@ In chapter six deploy a second vWAN hub and create a VNET, peer the VNET to the 
 
 After you have completed the above tasks, the diagram below is a visual representation of what you will have deployed and configured.
 
-{{< figure src="../images/1_1-az-vwan-second-hub-ra.PNG" >}}
+{{< figure src="images/1_1-az-vwan-second-hub-ra.PNG" >}}
 
 **Continue to Chapter 6 - Task 1: Deploy a second VWAN Hub**
