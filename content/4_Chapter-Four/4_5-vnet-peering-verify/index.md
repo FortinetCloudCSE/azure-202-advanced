@@ -92,6 +92,6 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
 
 The diagram below is a visual representation of what you have deployed and configured.  Congrats!
 
-{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}
+{{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
 **Continue to Chapter 5 - Network Traffic Management**
