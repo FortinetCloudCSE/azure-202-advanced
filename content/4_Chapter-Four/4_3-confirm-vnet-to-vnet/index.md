@@ -40,8 +40,8 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
 1. ***Login*** to Linux-Spoke1-VM:
 
-    - username `fortixpert`
-    - password `fortiXpert!`
+    - username `fortixperts`
+    - password `fortiXperts!`
 
 1. ***Ping*** Linux-Spoke2-VM from Linux-Spoke1-VM:
 

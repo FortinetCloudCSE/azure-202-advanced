@@ -36,9 +36,9 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
       - ***Click*** the "Select" button
           {{< figure src="6_3-deploy-vm-3.PNG" alt="6_3-deploy-vm-3" >}}
     - **Authentication type**:  **Password**
-    - **Username**:  **fortixperts**
-    - **Password**:  **fortiXperts!**
-    - **Confirm password**:  **fortiXperts!**
+    - **Username**:  `fortixperts`
+    - **Password**:  `fortiXperts!`
+    - **Confirm password**:  `fortiXperts!`
 
 1. ***Confirm*** the changes and the other fields default entries match the following diagram.
 
