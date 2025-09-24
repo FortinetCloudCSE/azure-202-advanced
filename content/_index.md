@@ -22,3 +22,5 @@ The course continues with the deployment of active/active FortiGate NVAs to secu
 {{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
 **Continue to Chapter 1: Reference Diagrams**
+
+{{< quizframe page="/gamebytag?tag=ch1" height="800" width="100%" >}}
