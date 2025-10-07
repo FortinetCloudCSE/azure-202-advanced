@@ -132,6 +132,7 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
 
     {{< figure src="5_3-internet-inbound-9.png" alt="5_3-internet-inbound-9" >}}
 
+{{< quizframe page="/gamebytag?tag=ch5" height="800" width="100%" >}}
 
 **Continue to Chapter 6 - Two vWAN Hubs**
 

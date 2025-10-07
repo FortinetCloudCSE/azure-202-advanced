@@ -34,4 +34,6 @@ Deployment requires the following:
 - The number of required FortiGate licenses depends on the selected scale unit. Bring-Your-Own-License (BYOL), FortiFlex, and Pay-As-You-Go (PAYG) are all supported. the desired licensing method can be chosen during deployment.
 - One fully licensed FortiManager instance (BYOL or Flex) is recommended, but not required.
 
+{{< quizframe page="/gamebytag?tag=ch2" height="800" width="100%" >}}
+
 **Continue to Chapter 3 - Getting Started**

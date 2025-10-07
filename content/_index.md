@@ -23,4 +23,3 @@ The course continues with the deployment of active/active FortiGate NVAs to secu
 
 **Continue to Chapter 1: Reference Diagrams**
 
-{{< quizframe page="/gamebytag?tag=ch1" height="800" width="100%" >}}

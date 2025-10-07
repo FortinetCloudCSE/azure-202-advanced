@@ -94,4 +94,6 @@ The diagram below is a visual representation of what you have deployed and confi
 
 {{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
+{{< quizframe page="/gamebytag?tag=ch4" height="800" width="100%" >}}
+
 **Continue to Chapter 5 - Network Traffic Management**
