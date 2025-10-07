@@ -55,4 +55,6 @@ The work for this session takes place in Azure and on FortiGates deployed into t
 
     {{< figure src="portallogin5.png" alt="portallogin5" >}}
 
+{{< quizframe page="/gamebytag?tag=ch3" height="800" width="100%" >}}
+
 **Continue to Chapter 4 - Securing the Azure vWAN**
