@@ -30,7 +30,7 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
     Linux-Spoke1-VM        | Linux-Spoke2-VM
     :-------------------------:|:-------------------------:
-    {{< figure src="linuxvm1.jpg" alt="linuxvm1" >}} |  {{< figure src="linuxvm2.jpg" alt="linuxvm2" >}}
+    {{< figure src="linuxvm1.png" alt="linuxvm1" >}} |  {{< figure src="linuxvm2.png" alt="linuxvm2" >}}
 
 1. Access the serial console on the Linux-Spoke1-VM.
 

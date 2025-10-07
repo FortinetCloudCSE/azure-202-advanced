@@ -14,7 +14,6 @@ The following two architectures will be deployed:
 
 {{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}}
 
-- **Expand the architecture with deployment of a second vWAN hub, a VNET, and routing.  Network traffic between the hubs will be managed through the FortiGate NVAs**
-{{< figure src="images/1_1-az-vwan-second-hub-ra.PNG" >}}
+- **Expand the architecture with deployment of a second vWAN hub, a VNET, and routing.  Network traffic between the hubs will be managed through the FortiGate NVAs**{{< figure src="/images/1_1-az-vwan-second-hub-ra.PNG" >}}
 
 **Continue to Chapter 2 - Azure Virtual WAN Concepts**

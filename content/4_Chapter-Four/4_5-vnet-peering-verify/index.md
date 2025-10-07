@@ -84,8 +84,8 @@ Where traffic will be sent in Azure can be determined by viewing the effective r
 
     - Repeat for **Linux-Spoke2-VM**
 
-        {{< figure src="routing3.jpg" alt="routing3" >}}
-        {{< figure src="routing4.jpg" alt="routing4" >}}
+        {{< figure src="routing3.png" alt="routing3" >}}
+        {{< figure src="routing4.png" alt="routing4" >}}
         {{< figure src="4_5-vnet-peering-verify-6.PNG" alt="4_5-vnet-peering-verify-6" >}}
 
     **The effective route's next hop IP is the IP address of internal load balancer that is deployed in the vWAN hub with the FortiGate NVAs.**

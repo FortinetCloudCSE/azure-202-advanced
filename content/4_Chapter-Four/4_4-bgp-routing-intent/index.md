@@ -25,7 +25,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - **Open** FortiGate CLI
     - **Run** CLI command `get router info bgp summary` to view BGP Peer status
 
-        {{< figure src="bgp0.jpg" alt="bgp0" >}}
+        {{< figure src="bgp0.png" alt="bgp0" >}}
 
 1. ***Determine*** FortiGate NVA port2 Gateway
 
@@ -54,7 +54,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Click*** Static Routes
     - ***Click*** Create New
 
-        {{< figure src="bgp3.jpg" alt="bgp3" >}}
+        {{< figure src="bgp3.png" alt="bgp3" >}}
 
 1. ***Create*** a static route
 
@@ -63,11 +63,11 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Select*** Interface - **port2**
     - ***Click*** "OK"
 
-        {{< figure src="bgp4.jpg" alt="bgp4" >}}
+        {{< figure src="bgp4.png" alt="bgp4" >}}
 
 1. ***Repeat*** the process to add a static route for the Azure internal load balancer health probe
 
-    Refer to the overall {{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" >}} for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
+    Refer to the overall [{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}) for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
 
     The static route destination below is the default Azure load balancer health probe destination.
 
@@ -81,7 +81,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
 
     When completed the static routes of each FortiGate should look similar to the screenshot below.
 
-    {{< figure src="bgp5.jpg" alt="bgp5" >}}
+    {{< figure src="bgp5.png" alt="bgp5" >}}
 
 1. ***Verify*** BGP communication between FortiGate NVAs
 
@@ -91,7 +91,7 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - **Open** FortiGate CLI
     - **Run** CLI command `get router info bgp summary`
 
-        {{< figure src="bgp6.jpg" alt="bgp6" >}}
+        {{< figure src="bgp6.png" alt="bgp6" >}}
 
     More information about FortiGate static routes and BGP can be found in [Fortinet documents](https://docs.fortinet.com/document/fortigate-public-cloud/7.4.0/azure-vwan-ngfw-deployment-guide/860717/configuring-static-routes-and-enabling-bgp-on-fortigate-nvas).
 
