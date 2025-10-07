@@ -35,7 +35,7 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
         FortiGate 0 | FortiGate 1
         :-:|:-:
-        {{< figure src="5_1-east-west-net-traffic-3.PNG" class="zoomable" >}} | {{< figure src="fgtpingdiag2.jpg" class="zoomable" >}}
+        {{< figure src="5_1-east-west-net-traffic-3.PNG" class="zoomable" >}} | {{< figure src="fgtpingdiag2.png" class="zoomable" >}}
 
     The ping traffic is only on one FortiGate, this is because the internal load balancer sends traffic from the Spokes to one of the FortiGates for inspection.
 
@@ -76,6 +76,6 @@ In this task create FortiGate firewall policies to allow east-west network traff
 
         FortiGate 0 | FortiGate 1
         :-:|:-:
-        {{< figure src="5_1-east-west-net-traffic-6.PNG" class="zoomable" >}} | {{< figure src="fgtpingdiag4.jpg" class="zoomable" >}}
+        {{< figure src="5_1-east-west-net-traffic-6.PNG" class="zoomable" >}} | {{< figure src="fgtpingdiag4.png" class="zoomable" >}}
 
 **Continue to Chapter 5 - Task 2: North-South Network Traffic**

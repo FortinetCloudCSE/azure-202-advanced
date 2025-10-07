@@ -36,7 +36,7 @@ In this task create FortiGate firewall policies to allow North-South (Spoke to I
 
         FortiGate 0 | FortiGate 1
         :-:|:-:
-        {{< figure src="fgtpingdiag5.jpg" alt="fgtpingdiag5" class="zoomable" >}} | {{< figure src="5_2-north-south-net-traffic-1.PNG" alt="fgtpingdiag6" class="zoomable" >}}
+        {{< figure src="5_2-north-south-net-traffic-2" alt="5_2-north-south-net-traffic-2" class="zoomable" >}} | {{< figure src="5_2-north-south-net-traffic-1.PNG" alt="fgtpingdiag6" class="zoomable" >}}
 
     The ping traffic is only on one FortiGate, this is because the internal load balancer sends traffic from the Spokes to one of the FortiGates for inspection.
 
@@ -81,6 +81,6 @@ In this task create FortiGate firewall policies to allow North-South (Spoke to I
 
     FortiGate 0 | FortiGate 1
     :-:|:-:
-    {{< figure src="fgtpingdiag7.jpg" alt="fgtpingdiag7" class="zoomable" >}} | {{< figure src="5_2-north-south-net-traffic-2.PNG" alt="fgtpingdiag8" class="zoomable" >}}
+    {{< figure src="fgtpingdiag5.png" alt="fgtpingdiag5" class="zoomable" >}} | {{< figure src="fgtpingdiag7.png" alt="fgtpingdiag7" class="zoomable" >}}
 
 **Continue to Chapter 5 - Task 3: Internet Inbound**
