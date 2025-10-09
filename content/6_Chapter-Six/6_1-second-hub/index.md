@@ -32,15 +32,15 @@ The initial vWAN hub setup was already done for you before the session. Now you 
     - ***Click*** - "Next: Review + create" button
     - ***Click*** - "Next: Create" button
 
-        {{< figure src="hub3.jpg" alt="hub3" >}}
-        {{< figure src="hub4.jpg" alt="hub4" >}}
-        {{< figure src="hub5.jpg" alt="hub5" >}}
-        {{< figure src="hub6.jpg" alt="hub6" >}}
+        {{< figure src="hub3.png" alt="hub3" >}}
+        {{< figure src="hub4.png" alt="hub4" >}}
+        {{< figure src="hub5.png" alt="hub5" >}}
+        {{< figure src="hub6.png" alt="hub6" >}}
         {{< figure src="6_1-second-hub-3.PNG" alt="6_1-second-hub-3" >}}
 
         {{% notice tip %}}A deployment progress screen will be shown followed by a deployment completion screen. Hub deployment can take up to 30 minutes. Leave this browser tab open until you confirm the deployment has completed.  Open the Azure portal in another browser tab and continue with the next task.{{% /notice %}}
 
-        {{< figure src="hub8.jpg" alt="hub8" >}}
-        {{< figure src="hub9.jpg" alt="hub9" >}}
+        {{< figure src="hub8.png" alt="hub8" >}}
+        {{< figure src="hub9.png" alt="hub9" >}}
 
 **Continue to Chapter 6 - Task 2: Deploy a VNET**
