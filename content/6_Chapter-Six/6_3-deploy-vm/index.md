@@ -16,7 +16,7 @@ Now that the "Spoke3-vHub2_VNET" VNET is deployed, deploy a Linux VM in Spoke3-v
 
     You will be redirected to the Azure Marketplace.
 
-1. ***Enter***  - **ubuntu 24.10** - in the Marketplace search bar, then press enter.  Navigate to the **Ubuntu 24.10** offering from **Canonical** and select **Create** and **Ubuntu Server 24.10**.
+1. ***Enter***  - **ubuntu 22.04 - in the Marketplace search bar, then press enter.  Navigate to the **Ubuntu 22.04** offering from **Canonical** and select **Create** and **Ubuntu Server 24.10**.
 
     {{< figure src="6_3-deploy-vm-2.PNG" alt="6_3-deploy-vm-2" >}}
 
