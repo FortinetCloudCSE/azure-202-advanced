@@ -12,7 +12,7 @@
 
     .NOTES
         AUTHOR: jmcdonough@fortinet.com
-        LASTEDIT: September 4, 2025
+        LASTEDIT: September 19, 2025
 
 	.Examples
 		List
@@ -35,8 +35,12 @@ param(
 	[switch] $Delete
 )
 
+$clientCredentials = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $env:ARM_CLIENT_ID, $(ConvertTo-SecureString -String $env:ARM_CLIENT_SECRET -AsPlainText -Force)
+
+Connect-MgGraph -TenantId $env:ARM_TENANT_ID -ClientSecretCredential $clientCredentials -NoWelcome
+
 foreach ($resourceGroup in $ResourceGroups) {
-	$vHubs = Get-AzVirtualHub -ResourceGroupName $resourceGroup.ResourceGroupName
+	$vHubs = Get-AzVirtualHub -ResourceGroupName $resourceGroup.ResourceGroupName -ErrorAction SilentlyContinue
 
 	foreach ($vhub in $vhubs) {
 		$vhubVnetConnections = Get-AzVirtualHubVnetConnection -ResourceGroupName $resourceGroup.ResourceGroupName -ParentResourceName $vHub.Name -ErrorAction SilentlyContinue
