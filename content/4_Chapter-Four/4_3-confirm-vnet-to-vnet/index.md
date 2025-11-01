@@ -13,7 +13,7 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 1. ***View*** the assigned VNET address space, navigate from your assigned resource group to each VNET
   
     - **"Spoke1-vHub1_VNET"**
-    - **"Spoke2-vHub1_VNET"**.
+    - **"Spoke2-vHub1_VNET"**
 
         {{< figure src="4_3-confirm-vnet-to-vnet-1.PNG" alt="4_3-confirm-vnet-to-vnet-1" >}}
 
@@ -28,9 +28,11 @@ In this task confirm that each Linux VM cannot communicate between VNETs but can
 
     {{< figure src="4_3-confirm-vnet-to-vnet-3.PNG" alt="4_3-confirm-vnet-to-vnet-3" >}}
 
-    Linux-Spoke1-VM        | Linux-Spoke2-VM
-    :-------------------------:|:-------------------------:
-    {{< figure src="linuxvm1.png" alt="linuxvm1" >}} |  {{< figure src="linuxvm2.png" alt="linuxvm2" >}}
+    **Linux-Spoke1-VM**
+    {{< figure src="linuxvm1.png" alt="linuxvm1" >}}
+
+    **Linux-Spoke2-VM**
+    {{< figure src="linuxvm2.png" alt="linuxvm2" >}}
 
 1. Access the serial console on the Linux-Spoke1-VM.
 

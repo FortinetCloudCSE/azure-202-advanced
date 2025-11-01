@@ -24,9 +24,9 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
     1. ***Open*** a CLI session on each FortiGate
     1. Enter the blocks of CLI commands on each FortiGate.
 
-    1. On FortiGate ending with **_0** configure the peerip address with the port2 private IP address of the FortiGate ending with **_1**.
+    1. On FortiGate ending with **000000** configure the peerip address with the port2 private IP address of the FortiGate ending with **000001**.
 
-        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_1** is not **10.1.112.7** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_1**</br>
+        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **000001** is not **10.1.112.7** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_1**</br>
         Copy these CLI commands to notepad or similar tool to update the *peerip* address, if required.{{% /notice %}}
 
         ```basic
@@ -56,9 +56,9 @@ After the FortiGate NVA deployments are complete, the next step is to configure 
         end
         ```
 
-    1. On FortiGate ending with **_1** configure the peerip address with the port2 private IP address of the FortiGate ending with **_1**.
+    1. On FortiGate ending with **1** configure the peerip address with the port2 private IP address of the FortiGate ending with **000000**.
 
-        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **_0** is not **10.1.112.6** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **_0**</br>
+        {{% notice warning %}}If the IP address of **port2** on FortiGate ending **000000** is not **10.1.112.6** replace the **peerip** below with the port2 private IP address of the FortiGate ending with **000000**</br>
         Copy these CLI commands to notepad or similar tool to update the *peerip* address, if required.{{% /notice %}}
 
         {{% notice warning %}}Notice that the **group-member-id** is **2** in the CLI commands below{{% /notice %}}

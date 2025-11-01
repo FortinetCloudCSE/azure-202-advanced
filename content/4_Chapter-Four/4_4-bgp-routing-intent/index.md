@@ -67,7 +67,9 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
 
 1. ***Repeat*** the process to add a static route for the Azure internal load balancer health probe
 
-    Refer to the overall [{{< figure src="../images/1_1-az-vwan-single-hub-ra.PNG" >}}) for the internal load balancer placement. Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
+    Refer to the overall architecture {{< figure src="images/1_1-az-vwan-single-hub-ra.PNG" alt="1_1-az-vwan-single-hub-ra" >}} for the internal load balancer placement.
+
+    Health probes enable the Azure load balancer to determine if a FortiGate is in a state to forward traffic.
 
     The static route destination below is the default Azure load balancer health probe destination.
 
@@ -78,6 +80,24 @@ In this task configure BGP on the FortiGates and enable Routing Intent from the 
     - ***Click*** "OK"
 
 1. ***Repeat*** the commands on the other FortiGate
+
+    - CLI commands below can be used.
+
+        ```text
+        config router static
+        edit 1
+            set dst 10.1.0.0 255.255.0.0
+            set gateway 10.1.112.1
+            set device "port2"
+        next
+        edit 2
+            set dst 168.63.129.16 255.255.255.255
+            set gateway 10.1.112.1
+            set distance 5
+            set device "port2"
+        next
+        end
+        ```
 
     When completed the static routes of each FortiGate should look similar to the screenshot below.
 
