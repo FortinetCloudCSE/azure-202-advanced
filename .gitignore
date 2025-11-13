@@ -9,5 +9,3 @@ terraform.tfstate*
 terraform.tfvars
 .vscode/
 venv/
-wip/
-migration_log.csv
