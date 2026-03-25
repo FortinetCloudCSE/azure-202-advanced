@@ -43,12 +43,20 @@ In this task create FortiGate firewall policies and DNAT (Destination Network Ad
 
     {{< figure src="5_3-internet-inbound-4.png" alt="5_3-internet-inbound-4" >}}
 
+1. ***Click*** on the ***>_*** at the top right corner.
+
+    - ***Copy*** this command `exec azure vwan-slb pull`
+    - ***Note*** Should see output like below
+
+    {{< figure src="5_3-internet-inbound-10.png" alt="5_3-internet-inbound-10" >}}
+
 1. ***Copy*** the below configuration to create rules on the loadbalancer. 
 
     {{% notice warning %}}Load Balancer rules only need to be configured on **one** FortiGate NVA.{{% /notice %}}
 
     {{% notice warning %}}Make sure to change the ***applies-on*** to reflect the name of your Public IP </br>
         Copy these CLI commands to notepad or similar tool to update the **vwanxx-slb-pip**, if required.{{% /notice %}}
+        
 
     ```basic
     config azure vwan-slb
